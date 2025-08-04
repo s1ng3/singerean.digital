@@ -136,7 +136,8 @@ const translations = {
         
         // Contact Section
         'contact-connect-title': 'Let\'s Connect',
-        'contact-connect-description': 'I\'m always interested in new opportunities and collaborations. Feel free to reach out!',
+        'contact-connect-description-1': 'I\'m always interested in new opportunities and collaborations.',
+        'contact-connect-description-2': 'Feel free to reach out!',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': 'Cluj-Napoca, Romania',
         'contact-university': 'Technical University of Cluj-Napoca',
@@ -320,7 +321,8 @@ const translations = {
         
         // Contact Section - Romanian
         'contact-connect-title': 'Să Ne Conectăm',
-        'contact-connect-description': 'Sunt întotdeauna interesat de oportunități noi și colaborări. Nu ezita să mă contactezi!',
+        'contact-connect-description-1': 'Sunt întotdeauna interesat de oportunități noi și colaborări.',
+        'contact-connect-description-2': 'Nu ezita să mă contactezi!',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': 'Cluj-Napoca, România',
         'contact-university': 'Universitatea Tehnică din Cluj-Napoca',
@@ -499,7 +501,8 @@ const translations = {
         
         // Contact Section - German
         'contact-connect-title': 'Lass uns in Verbindung bleiben',
-        'contact-connect-description': 'Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert. Zögere nicht, mich zu kontaktieren!',
+        'contact-connect-description-1': 'Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.',
+        'contact-connect-description-2': 'Zögere nicht, mich zu kontaktieren!',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': 'Cluj-Napoca, Rumänien',
         'contact-university': 'Technische Universität Cluj-Napoca',
@@ -678,7 +681,8 @@ const translations = {
         
         // Contact Section - French
         'contact-connect-title': 'Connectons-nous',
-        'contact-connect-description': 'Je suis toujours intéressé par de nouvelles opportunités et collaborations. N\'hésitez pas à me contacter !',
+        'contact-connect-description-1': 'Je suis toujours intéressé par de nouvelles opportunités et collaborations.',
+        'contact-connect-description-2': 'N\'hésitez pas à me contacter !',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': 'Cluj-Napoca, Roumanie',
         'contact-university': 'Université Technique de Cluj-Napoca',
@@ -857,7 +861,8 @@ const translations = {
         
         // Contact Section - Spanish
         'contact-connect-title': 'Conectémonos',
-        'contact-connect-description': 'Siempre estoy interesado en nuevas oportunidades y colaboraciones. ¡No dudes en contactarme!',
+        'contact-connect-description-1': 'Siempre estoy interesado en nuevas oportunidades y colaboraciones.',
+        'contact-connect-description-2': '¡No dudes en contactarme!',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': 'Cluj-Napoca, Rumania',
         'contact-university': 'Universidad Técnica de Cluj-Napoca',
@@ -1036,7 +1041,8 @@ const translations = {
         
         // Contact Section - Italian
         'contact-connect-title': 'Mettiamoci in contatto',
-        'contact-connect-description': 'Sono sempre interessato a nuove opportunità e collaborazioni. Non esitare a contattarmi!',
+        'contact-connect-description-1': 'Sono sempre interessato a nuove opportunità e collaborazioni.',
+        'contact-connect-description-2': 'Non esitare a contattarmi!',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': 'Cluj-Napoca, Romania',
         'contact-university': 'Università Tecnica di Cluj-Napoca',
@@ -1215,7 +1221,8 @@ const translations = {
         
         // Contact Section - Japanese
         'contact-connect-title': 'つながりましょう',
-        'contact-connect-description': '私は常に新しい機会やコラボレーションに興味があります。お気軽にご連絡ください！',
+        'contact-connect-description-1': '私は常に新しい機会やコラボレーションに興味があります。',
+        'contact-connect-description-2': 'お気軽にご連絡ください！',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': 'クルジュ・ナポカ、ルーマニア',
         'contact-university': 'クルジュ・ナポカ工科大学',
@@ -1394,7 +1401,8 @@ const translations = {
         
         // Contact Section - Chinese
         'contact-connect-title': '让我们联系',
-        'contact-connect-description': '我一直对新的机会和合作感兴趣。请随时联系我！',
+        'contact-connect-description-1': '我一直对新的机会和合作感兴趣。',
+        'contact-connect-description-2': '请随时联系我！',
         'contact-email': 'tudor.singerean@yahoo.com',
         'contact-location': '克卢日-纳波卡，罗马尼亚',
         'contact-university': '克卢日-纳波卡技术大学',
