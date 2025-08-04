@@ -72,7 +72,7 @@ const translations = {
         'education-status-completed': 'Completed',
         'education-description-bachelors': 'Comprehensive program covering automation systems, computer science fundamentals, and engineering principles.',
         'achievements-title': 'Key Achievements:',
-        'achievement-1': 'Outstanding academic performance with perfect GPA',
+        'achievement-1': 'Outstanding academic performance',
         'achievement-2': 'Active participation in technical projects and research',
         'achievement-3': 'Strong foundation in both theoretical and practical engineering concepts',
         
@@ -262,7 +262,7 @@ const translations = {
         'education-status-completed': 'Finalizat',
         'education-description-bachelors': 'Program comprehensiv acoperind sisteme de automatizare, fundamentale ale științei calculatoarelor și principii de inginerie.',
         'achievements-title': 'Realizări Cheie:',
-        'achievement-1': 'Performanță academică excepțională cu GPA perfect',
+        'achievement-1': 'Performanță academică excepțională',
         'achievement-2': 'Participare activă în proiecte tehnice și cercetare',
         'achievement-3': 'Fundament puternic atât în concepte teoretice cât și practice de inginerie',
         
@@ -442,7 +442,7 @@ const translations = {
         'education-status-completed': 'Abgeschlossen',
         'education-description-bachelors': 'Umfassendes Programm, das Automatisierungssysteme, Informatikgrundlagen und Ingenieurprinzipien abdeckt.',
         'achievements-title': 'Wichtige Erfolge:',
-        'achievement-1': 'Hervorragende akademische Leistung mit perfektem GPA',
+        'achievement-1': 'Hervorragende akademische Leistung',
         'achievement-2': 'Aktive Teilnahme an technischen Projekten und Forschung',
         'achievement-3': 'Starke Grundlage sowohl in theoretischen als auch praktischen Ingenieurkonzepten',
         
@@ -622,7 +622,7 @@ const translations = {
         'education-status-completed': 'Terminé',
         'education-description-bachelors': 'Programme complet couvrant les systèmes d\'automatisation, les fondamentaux de l\'informatique et les principes d\'ingénierie.',
         'achievements-title': 'Réalisations Clés:',
-        'achievement-1': 'Performance académique exceptionnelle avec GPA parfait',
+        'achievement-1': 'Performance académique exceptionnelle',
         'achievement-2': 'Participation active aux projets techniques et à la recherche',
         'achievement-3': 'Fondation solide dans les concepts d\'ingénierie théoriques et pratiques',
         
@@ -802,7 +802,7 @@ const translations = {
         'education-status-completed': 'Completado',
         'education-description-bachelors': 'Programa integral que cubre sistemas de automatización, fundamentos de informática y principios de ingeniería.',
         'achievements-title': 'Logros Clave:',
-        'achievement-1': 'Rendimiento académico excepcional con GPA perfecto',
+        'achievement-1': 'Rendimiento académico excepcional',
         'achievement-2': 'Participación activa en proyectos técnicos e investigación',
         'achievement-3': 'Base sólida tanto en conceptos de ingeniería teóricos como prácticos',
         
@@ -982,7 +982,7 @@ const translations = {
         'education-status-completed': 'Completato',
         'education-description-bachelors': 'Programma completo che copre sistemi di automazione, fondamenta dell\'informatica e principi di ingegneria.',
         'achievements-title': 'Risultati Chiave:',
-        'achievement-1': 'Prestazione accademica eccezionale con GPA perfetto',
+        'achievement-1': 'Prestazione accademica eccezionale',
         'achievement-2': 'Partecipazione attiva a progetti tecnici e ricerca',
         'achievement-3': 'Fondazione solida sia in concetti di ingegneria teorici che pratici',
         
@@ -1162,7 +1162,7 @@ const translations = {
         'education-status-completed': '完了',
         'education-description-bachelors': '自動化システム、コンピュータサイエンス基礎、工学原理をカバーする包括的プログラム。',
         'achievements-title': '主要な成果:',
-        'achievement-1': '完璧なGPAによる卓越した学業成績',
+        'achievement-1': '卓越した学業成績',
         'achievement-2': '技術プロジェクトと研究への積極的な参加',
         'achievement-3': '理論的および実践的工学概念の両方における強固な基盤',
         
@@ -1342,7 +1342,7 @@ const translations = {
         'education-status-completed': '已完成',
         'education-description-bachelors': '涵盖自动化系统、计算机科学基础和工程原理的综合课程。',
         'achievements-title': '主要成就:',
-        'achievement-1': '完美GPA的卓越学术表现',
+        'achievement-1': '卓越学术表现',
         'achievement-2': '积极参与技术项目和研究',
         'achievement-3': '在理论和实践工程概念方面都有坚实基础',
         
