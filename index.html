@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Tudor-Cristian Sîngerean - Cybersecurity Engineering Student</title>
+    <meta name="description" content="Tudor-Cristian Sîngerean - Cybersecurity Engineering student at Technical University of Cluj-Napoca. Specializing in automation, software engineering, and cybersecurity.">
+    <meta name="theme-color" content="#E63946">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TCS Portfolio">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">TCS</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+                <a href="#about" class="nav-link" data-translate="nav-about">About</a>
+                <a href="#experience" class="nav-link" data-translate="nav-experience">Experience</a>
+                <a href="#education" class="nav-link" data-translate="nav-education">Education</a>
+                <a href="#research" class="nav-link" data-translate="nav-research">Research</a>
+                <a href="#projects" class="nav-link" data-translate="nav-projects">Projects</a>
+                <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
+                <a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-controls">
+                <div class="language-dropdown" role="group" aria-label="Language selection">
+                    <button class="lang-dropdown-btn" id="lang-dropdown-btn" aria-label="Select language" aria-expanded="false">
+                        <span class="flag">🇺🇸</span>
+                        <span class="lang-text">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-dropdown-menu" id="lang-dropdown-menu">
+                        <button class="lang-option active" data-lang="en" aria-label="English">
+                            <span class="flag">🇺🇸</span>
+                            <span class="lang-text">English</span>
+                        </button>
+                        <button class="lang-option" data-lang="ro" aria-label="Romanian">
+                            <span class="flag">🇷🇴</span>
+                            <span class="lang-text">Română</span>
+                        </button>
+                        <button class="lang-option" data-lang="de" aria-label="German">
+                            <span class="flag">🇩🇪</span>
+                            <span class="lang-text">Deutsch</span>
+                        </button>
+                        <button class="lang-option" data-lang="fr" aria-label="French">
+                            <span class="flag">🇫🇷</span>
+                            <span class="lang-text">Français</span>
+                        </button>
+                        <button class="lang-option" data-lang="es" aria-label="Spanish">
+                            <span class="flag">🇪🇸</span>
+                            <span class="lang-text">Español</span>
+                        </button>
+                        <button class="lang-option" data-lang="it" aria-label="Italian">
+                            <span class="flag">🇮🇹</span>
+                            <span class="lang-text">Italiano</span>
+                        </button>
+                        <button class="lang-option" data-lang="ja" aria-label="Japanese">
+                            <span class="flag">🇯🇵</span>
+                            <span class="lang-text">日本語</span>
+                        </button>
+                        <button class="lang-option" data-lang="zh" aria-label="Chinese">
+                            <span class="flag">🇨🇳</span>
+                            <span class="lang-text">中文</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="red-gradient"></div>
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-translate="hero-title">Tudor-Cristian Sîngerean</h1>
+                <p class="hero-subtitle" data-translate="hero-subtitle">Cybersecurity Engineering Master's Student</p>
+                <div class="hero-description">
+                    <p data-translate="hero-description-1">• Passionate about technology, entrepreneurship, and software engineering.</p>
+                    <p data-translate="hero-description-2">• Studying at Technical University of Cluj-Napoca.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-translate="get-in-touch">Get in Touch</a>
+                    <button class="btn btn-secondary" id="cv-button" data-translate="preview-cv">Preview CV</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="profile.png" alt="Tudor-Cristian Sîngerean" class="profile-img">
+            </div>
+        </div>
+        <div class="scroll-cue">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><span data-translate="about-text-1">I'm a highly motivated and ambitious student at the Technical University of Cluj-Napoca, specializing in</span> <span class="highlight" data-translate="about-text-2">Cybersecurity Engineering</span>. <span data-translate="about-text-3">My passion lies in technology, entrepreneurship, and software engineering.</span></p>
+                    <p><span data-translate="about-text-4">Currently, I'm focusing on improving my skills in</span> <span class="highlight" data-translate="about-text-5">Rust</span> <span data-translate="about-text-6">and exploring various technologies, and web development. I'm excited to start my career in software engineering and contribute to innovative projects.</span></p>
+                    <p><span data-translate="about-text-7">Based in</span> <span class="highlight" data-translate="about-text-8">Cluj-Napoca</span>, <span data-translate="about-text-9">I'm always looking for opportunities to learn, grow, and collaborate on interesting projects.</span></p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat" data-target="20">
+                        <h3 class="counter">0</h3>
+                        <p data-translate="projects-completed">Projects</p>
+                    </div>
+                    <div class="stat" data-target="10">
+                        <h3 class="counter">0</h3>
+                        <p data-translate="technologies">Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-translate="experience-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-translate="job-title-ntt">Infrastructure & Platform Services - Working Student</h3>
+                            <div class="company-info">
+                                <div class="company-logo">
+                                    <img src="nttdata.png" alt="NTT DATA" class="company-logo-img">
+                                </div>
+                                <div class="company-details">
+                                    <h4 data-translate="company-ntt">NTT DATA</h4>
+                                    <p class="employment-type" data-translate="employment-type-part-time">Part-time</p>
+                                    <p class="timeline-dates" data-translate="date-ntt">December 2024 - Present</p>
+                                    <p class="timeline-location" data-translate="location-cluj">Cluj-Napoca, Cluj, Romania</p>
+                                    <p class="work-arrangement" data-translate="work-arrangement-remote">Remote</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-tag" data-translate="skill-linux">Linux</span>
+                            <span class="skill-tag" data-translate="skill-network-design">Network Design</span>
+                            <span class="skill-tag" data-translate="skill-infrastructure">Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-translate="job-title-bitdefender">Junior Software Engineer</h3>
+                            <div class="company-info">
+                                <div class="company-logo">
+                                    <img src="bitdefender.png" alt="Bitdefender" class="company-logo-img">
+                                </div>
+                                <div class="company-details">
+                                    <h4 data-translate="company-bitdefender">Bitdefender</h4>
+                                    <p class="employment-type" data-translate="employment-type-internship">Internship</p>
+                                    <p class="timeline-dates" data-translate="date-bitdefender">July 2024 - September 2024 (3 months)</p>
+                                    <p class="timeline-location" data-translate="location-cluj">Cluj-Napoca, Cluj, Romania</p>
+                                    <p class="work-arrangement" data-translate="work-arrangement-hybrid">Hybrid</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-tag" data-translate="skill-c">C</span>
+                            <span class="skill-tag" data-translate="skill-cpp">C++</span>
+                            <span class="skill-tag" data-translate="skill-software-engineering">Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title" data-translate="education-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="university-logo">
+                            <img src="utcn.ico" alt="Technical University of Cluj Napoca" class="university-logo-img">
+                        </div>
+                        <div class="education-details">
+                            <h3 data-translate="degree-title-masters">Master of Science - M.Sc, Cybersecurity Engineering</h3>
+                            <h4 data-translate="university-name">Technical University of Cluj Napoca</h4>
+                            <p class="education-dates" data-translate="education-date-masters">July 2025 - July 2027</p>
+                            <p class="education-status" data-translate="education-status-in-progress">In Progress</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <p data-translate="education-description-masters">Specialized program focusing on advanced cybersecurity concepts, network security, and digital forensics.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="university-logo">
+                            <img src="utcn.ico" alt="Technical University of Cluj Napoca" class="university-logo-img">
+                        </div>
+                        <div class="education-details">
+                            <h3 data-translate="degree-title-bachelors">Bachelor of Engineering - BE, Automation & Computer Science</h3>
+                            <h4 data-translate="university-name">Technical University of Cluj Napoca</h4>
+                            <p class="education-dates" data-translate="education-date-bachelors">October 2021 - July 2025</p>
+                            <p class="education-grade" data-translate="education-grade">Grade: 10/10</p>
+                            <p class="education-status" data-translate="education-status-completed">Completed</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <p data-translate="education-description-bachelors">Comprehensive program covering automation systems, computer science fundamentals, and engineering principles.</p>
+                        <div class="education-achievements">
+                            <h5 data-translate="achievements-title">Key Achievements:</h5>
+                            <ul>
+                                <li data-translate="achievement-1">Outstanding academic performance with perfect GPA</li>
+                                <li data-translate="achievement-2">Active participation in technical projects and research</li>
+                                <li data-translate="achievement-3">Strong foundation in both theoretical and practical engineering concepts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title" data-translate="research-title">Research & Publications</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-header">
+                        <div class="research-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="research-details">
+                            <h3 data-translate="research-paper-title">Development of a Comprehensive Process Management and Optimization System Using the Windows API</h3>
+                            <p class="research-date" data-translate="research-date">2025</p>
+                            <p class="research-institution" data-translate="research-institution">Technical University of Cluj-Napoca</p>
+                            <p class="research-authors" data-translate="research-authors">Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea</p>
+                            <p class="research-type" data-translate="research-type">Research Paper</p>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-abstract">
+                            <h4 data-translate="abstract-title">Abstract</h4>
+                            <p data-translate="abstract-1">Modern operating systems manage a varied set of processes, demanding sophisticated tools for supervision, management, and optimization to ensure system stability and performance. This paper describes the structure and theoretical foundations of a complete process management and performance optimization system using the functions of the Windows Application Programming Interface.</p>
+                            <p data-translate="abstract-2">The system presented here is meant to provide detailed information on process behavior, resource usage (CPU, memory, I/O), and inter-process relationships, with the ability for dynamic parameter-informed enhancement through experiential insight.</p>
+                            <p data-translate="abstract-3">Key Windows APIs for process enumeration and resource querying (including Performance Data Helper - PDH), prioritization, and exploring affinities such as alteration, memory resource management, and inter-process communication, form a fundamental part of the system architecture.</p>
+                            <p data-translate="abstract-4">While several existing tools offer resource insights (e.g., Task Manager, Process Hacker), they often lack extensibility, dynamic rule-based controls, and integrated heuristic engines. Our system addresses this gap through a multi-layered, API-centric architecture that emphasizes process behavior modeling and real-time optimization.</p>
+                        </div>
+                        <div class="research-keywords">
+                            <h4 data-translate="keywords-title">Keywords</h4>
+                            <div class="keyword-tags">
+                                <span class="keyword-tag" data-translate="keyword-process-management">Process Management</span>
+                                <span class="keyword-tag" data-translate="keyword-system-optimization">System Optimization</span>
+                                <span class="keyword-tag" data-translate="keyword-windows-api">Windows API</span>
+                                <span class="keyword-tag" data-translate="keyword-performance-monitoring">Performance Monitoring</span>
+                                <span class="keyword-tag" data-translate="keyword-resource-management">Resource Management</span>
+                                <span class="keyword-tag" data-translate="keyword-pdh">PDH</span>
+                            </div>
+                        </div>
+                        <div class="research-actions">
+                            <button class="btn btn-outline research-preview" data-translate="preview-paper">Preview Paper</button>
+                            <a href="scientific_paper_v10.pdf" class="btn btn-primary" download data-translate="download-pdf">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-translate="projects-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="procmon">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 data-translate="project-title-1">Process Monitoring Application</h3>
+                            <p data-translate="project-description-1">Real-time system monitoring tool for tracking processes, file system, registry, and network activities.</p>
+                        </div>
+                        <button class="btn btn-outline" data-translate="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="sobuddy">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 data-translate="project-title-2">SoBuddy</h3>
+                            <p data-translate="project-description-2">Modern web platform for social networking and community building with advanced features.</p>
+                        </div>
+                        <button class="btn btn-outline" data-translate="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="usereval">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 data-translate="project-title-3">User Evaluation System</h3>
+                            <p data-translate="project-description-3">Comprehensive system for evaluating user interactions and feedback analysis.</p>
+                        </div>
+                        <button class="btn btn-outline" data-translate="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="stock">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 data-translate="project-title-4">Stock Portfolio Management</h3>
+                            <p data-translate="project-description-4">Comprehensive Java application with secure authentication and real-time data integration through APIs.</p>
+                        </div>
+                        <button class="btn btn-outline" data-translate="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="airtraffic">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 data-translate="project-title-5">Air Traffic Control System</h3>
+                            <p data-translate="project-description-5">Simplified air traffic control system in Java for managing airplanes and flight operations.</p>
+                        </div>
+                        <button class="btn btn-outline" data-translate="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="catblog">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-cat"></i>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3 data-translate="project-title-6">Cat Blog Post App</h3>
+                            <p data-translate="project-description-6">Interactive web application for creating and sharing cat-related blog posts and content.</p>
+                        </div>
+                        <button class="btn btn-outline" data-translate="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-translate="skills-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-cpp"></i>
+                        <h3 data-translate="skill-c-cpp">C/C++</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-c-cpp">C/C++</h3>
+                        <p data-translate="skill-c-cpp-description">Systems programming and performance-critical applications</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-python"></i>
+                        <h3 data-translate="skill-python">Python</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-python">Python</h3>
+                        <p data-translate="skill-python-description">Data analysis and automation scripting</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-java"></i>
+                        <h3 data-translate="skill-java">Java</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-java">Java</h3>
+                        <p data-translate="skill-java-description">Advanced proficiency in Java development with Spring framework and Lombok</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-csharp"></i>
+                        <h3 data-translate="skill-csharp">C#</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-csharp">C#</h3>
+                        <p data-translate="skill-csharp-description">Unity development and .NET applications</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-js"></i>
+                        <h3 data-translate="skill-javascript">JavaScript</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-javascript">JavaScript</h3>
+                        <p data-translate="skill-javascript-description">Web development and Node.js applications</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-html5"></i>
+                        <h3 data-translate="skill-html-css">HTML/CSS</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-html-css">HTML/CSS</h3>
+                        <p data-translate="skill-html-css-description">Responsive web design and modern CSS techniques</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fas fa-database"></i>
+                        <h3 data-translate="skill-mysql">MySQL</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-mysql">MySQL</h3>
+                        <p data-translate="skill-mysql-description">Database design and management</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-git-alt"></i>
+                        <h3 data-translate="skill-git">Git</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-git">Git</h3>
+                        <p data-translate="skill-git-description">Version control and collaborative development</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fas fa-cube"></i>
+                        <h3 data-translate="skill-blender">Blender</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-blender">Blender</h3>
+                        <p data-translate="skill-blender-description">3D modeling and visualization</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fas fa-gamepad"></i>
+                        <h3 data-translate="skill-unity">Unity</h3>
+                    </div>
+                    <div class="skill-back">
+                        <h3 data-translate="skill-unity">Unity</h3>
+                        <p data-translate="skill-unity-description">Game development and 3D applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="contact-connect-title">Let's Connect</h3>
+                    <p data-translate="contact-connect-description">I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span data-translate="contact-email">tudor.singerean@yahoo.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="contact-location">Cluj-Napoca, Romania</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span data-translate="contact-university">Technical University of Cluj-Napoca</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/s1ng3" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tudor-cristian-singerean/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/tudorsingerean_" target="_blank" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tudor.singerean/" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name" data-translate="form-name-label">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email" data-translate="form-email-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject" data-translate="form-subject-label">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message" data-translate="form-message-label">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-translate="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close" data-translate="project-modal-close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title" data-translate="project-modal-title"></h2>
+                <p id="modal-description" data-translate="project-modal-description"></p>
+                <div class="modal-tech">
+                    <h3 data-translate="project-modal-technologies-title">Technologies Used:</h3>
+                    <div id="modal-technologies"></div>
+                </div>
+                <div class="modal-links">
+                    <a href="#" id="modal-github" class="btn btn-outline" target="_blank" data-translate="project-modal-view-github">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="cv-modal">
+        <div class="modal-content cv-modal-content">
+            <span class="modal-close" id="cv-modal-close">&times;</span>
+            <div class="modal-header">
+                <h2 data-translate="cv-modal-title">Curriculum Vitae</h2>
+                <div class="cv-actions">
+                    <button class="btn btn-primary" id="cv-download" data-translate="cv-download">
+                        <i class="fas fa-download"></i> Download CV
+                    </button>
+                    <button class="btn btn-outline" id="cv-print" data-translate="cv-print">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body cv-modal-body">
+                <iframe id="cv-iframe" src="resume.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="research-modal">
+        <div class="modal-content cv-modal-content">
+            <span class="modal-close" id="research-modal-close">&times;</span>
+            <div class="modal-header">
+                <h2 data-translate="research-modal-title">Development of a Comprehensive Process Management and Optimization System Using the Windows API</h2>
+                <div class="cv-actions">
+                    <button class="btn btn-primary" id="research-download" data-translate="research-download">
+                        <i class="fas fa-download"></i> Download Paper
+                    </button>
+                    <button class="btn btn-outline" id="research-print" data-translate="research-print">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body cv-modal-body">
+                <iframe id="research-iframe" src="scientific_paper_v10.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="install-prompt" id="install-prompt">
+        <span>Install this app for a better experience</span>
+        <button id="install-btn">Install</button>
+        <button id="dismiss-btn">Dismiss</button>
+    </div>
+
+    <div class="offline-indicator" id="offline-indicator">
+        <i class="fas fa-wifi-slash"></i> You're offline
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
