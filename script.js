@@ -80,7 +80,7 @@ const translations = {
         'research-paper-title': 'Development of a Comprehensive Process Management and Optimization System Using the Windows API',
         'research-date': '2025',
         'research-institution': 'Technical University of Cluj-Napoca',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': 'Research Paper',
         'abstract-title': 'Abstract',
         'abstract-1': 'Modern operating systems manage a varied set of processes, demanding sophisticated tools for supervision, management, and optimization to ensure system stability and performance. This paper describes the structure and theoretical foundations of a complete process management and performance optimization system using the functions of the Windows Application Programming Interface.',
@@ -233,7 +233,7 @@ const translations = {
         'research-paper-title': 'Dezvoltarea unui Sistem Complet de Gestionare și Optimizare a Proceselor Folosind API-ul Windows',
         'research-date': '2025',
         'research-institution': 'Universitatea Tehnică din Cluj-Napoca',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': 'Lucrare de Cercetare',
         'abstract-title': 'Rezumat',
         'abstract-1': 'Sistemele de operare moderne gestionează un set variat de procese, necesitând instrumente sofisticate pentru supervizare, gestionare și optimizare pentru a asigura stabilitatea și performanța sistemului. Această lucrare descrie structura și fundamentele teoretice ale unui sistem complet de gestionare și optimizare a performanței proceselor folosind funcțiile API-ului de Programare a Aplicațiilor Windows.',
@@ -413,7 +413,7 @@ const translations = {
         'research-paper-title': 'Entwicklung eines umfassenden Prozessmanagement- und Optimierungssystems unter Verwendung der Windows API',
         'research-date': '2025',
         'research-institution': 'Technische Universität Cluj-Napoca',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': 'Forschungsarbeit',
         'abstract-title': 'Zusammenfassung',
         'abstract-1': 'Moderne Betriebssysteme verwalten eine Vielzahl von Prozessen und benötigen ausgefeilte Tools für Überwachung, Verwaltung und Optimierung, um Systemstabilität und -leistung zu gewährleisten. Diese Arbeit beschreibt die Struktur und theoretischen Grundlagen eines vollständigen Prozessmanagement- und Leistungsoptimierungssystems unter Verwendung der Funktionen der Windows Application Programming Interface.',
@@ -593,7 +593,7 @@ const translations = {
         'research-paper-title': 'Développement d\'un Système Complet de Gestion et d\'Optimisation des Processus Utilisant l\'API Windows',
         'research-date': '2025',
         'research-institution': 'Université Technique de Cluj-Napoca',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': 'Article de Recherche',
         'abstract-title': 'Résumé',
         'abstract-1': 'Les systèmes d\'exploitation modernes gèrent un ensemble varié de processus, nécessitant des outils sophistiqués pour la supervision, la gestion et l\'optimisation afin d\'assurer la stabilité et les performances du système. Cet article décrit la structure et les fondements théoriques d\'un système complet de gestion et d\'optimisation des performances des processus utilisant les fonctions de l\'Interface de Programmation d\'Applications Windows.',
@@ -773,7 +773,7 @@ const translations = {
         'research-paper-title': 'Desarrollo de un Sistema Integral de Gestión y Optimización de Procesos Utilizando la API de Windows',
         'research-date': '2025',
         'research-institution': 'Universidad Técnica de Cluj-Napoca',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': 'Artículo de Investigación',
         'abstract-title': 'Resumen',
         'abstract-1': 'Los sistemas operativos modernos gestionan un conjunto variado de procesos, requiriendo herramientas sofisticadas para supervisión, gestión y optimización para asegurar la estabilidad y rendimiento del sistema. Este artículo describe la estructura y fundamentos teóricos de un sistema completo de gestión y optimización de rendimiento de procesos utilizando las funciones de la Interfaz de Programación de Aplicaciones de Windows.',
@@ -953,7 +953,7 @@ const translations = {
         'research-paper-title': 'Sviluppo di un Sistema Completo di Gestione e Ottimizzazione dei Processi Utilizzando l\'API Windows',
         'research-date': '2025',
         'research-institution': 'Università Tecnica di Cluj-Napoca',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': 'Articolo di Ricerca',
         'abstract-title': 'Riassunto',
         'abstract-1': 'I sistemi operativi moderni gestiscono un insieme vario di processi, richiedendo strumenti sofisticati per supervisione, gestione e ottimizzazione per garantire stabilità e prestazioni del sistema. Questo articolo descrive la struttura e i fondamenti teorici di un sistema completo di gestione e ottimizzazione delle prestazioni dei processi utilizzando le funzioni dell\'Interfaccia di Programmazione delle Applicazioni Windows.',
@@ -1133,7 +1133,7 @@ const translations = {
         'research-paper-title': 'Windows APIを使用した包括的なプロセス管理・最適化システムの開発',
         'research-date': '2025',
         'research-institution': 'クルジュ・ナポカ工科大学',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': '研究論文',
         'abstract-title': '要約',
         'abstract-1': '現代のオペレーティングシステムは多様なプロセスを管理し、システムの安定性とパフォーマンスを確保するために、監視、管理、最適化のための高度なツールを必要とします。本論文では、Windows Application Programming Interfaceの機能を使用した完全なプロセス管理・パフォーマンス最適化システムの構造と理論的基盤について説明します。',
@@ -1313,7 +1313,7 @@ const translations = {
         'research-paper-title': '使用Windows API开发综合进程管理和优化系统',
         'research-date': '2025',
         'research-institution': '克卢日-纳波卡技术大学',
-        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
+        'research-authors': 'Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea',
         'research-type': '研究论文',
         'abstract-title': '摘要',
         'abstract-1': '现代操作系统管理各种进程，需要复杂的工具进行监督、管理和优化，以确保系统稳定性和性能。本文描述了使用Windows应用程序编程接口功能构建的完整进程管理和性能优化系统的结构和理论基础。',
@@ -1622,6 +1622,77 @@ const researchDownload = document.getElementById('research-download');
 const researchPrint = document.getElementById('research-print');
 const researchIframe = document.getElementById('research-iframe');
 
+// Function to check if research paper buttons should be disabled
+function shouldDisableResearchButtons() {
+    const currentDate = new Date();
+    // Set target date to October 9th, 2025 at 00:00:00 UTC
+    const targetDate = new Date('2025-10-09T00:00:00.000Z');
+    return currentDate < targetDate;
+}
+
+// Function to disable research paper buttons
+function disableResearchButtons() {
+    if (researchPreviewBtn) {
+        researchPreviewBtn.disabled = true;
+        researchPreviewBtn.style.opacity = '0.5';
+        researchPreviewBtn.style.cursor = 'not-allowed';
+        researchPreviewBtn.title = 'Available from October 9th, 2025';
+    }
+    
+    // Disable the download PDF link
+    const downloadPdfLink = document.querySelector('a[href="scientific_paper_v10.pdf"]');
+    if (downloadPdfLink) {
+        downloadPdfLink.style.pointerEvents = 'none';
+        downloadPdfLink.style.opacity = '0.5';
+        downloadPdfLink.style.cursor = 'not-allowed';
+        downloadPdfLink.title = 'Available from October 9th, 2025';
+        // Remove the download attribute to prevent download
+        downloadPdfLink.removeAttribute('download');
+        // Change the href to prevent navigation
+        downloadPdfLink.href = 'javascript:void(0)';
+    }
+}
+
+// Function to enable research paper buttons
+function enableResearchButtons() {
+    if (researchPreviewBtn) {
+        researchPreviewBtn.disabled = false;
+        researchPreviewBtn.style.opacity = '1';
+        researchPreviewBtn.style.cursor = 'pointer';
+        researchPreviewBtn.title = '';
+    }
+    
+    // Enable the download PDF link - look for any link that might have been disabled
+    const downloadPdfLink = document.querySelector('a[href="javascript:void(0)"]') || document.querySelector('a[data-translate="download-pdf"]');
+    if (downloadPdfLink) {
+        downloadPdfLink.style.pointerEvents = 'auto';
+        downloadPdfLink.style.opacity = '1';
+        downloadPdfLink.style.cursor = 'pointer';
+        downloadPdfLink.title = '';
+        // Restore the download attribute and href
+        downloadPdfLink.setAttribute('download', '');
+        downloadPdfLink.href = 'scientific_paper_v10.pdf';
+    }
+}
+
+// Check and apply button state on page load
+if (shouldDisableResearchButtons()) {
+    disableResearchButtons();
+} else {
+    enableResearchButtons();
+}
+
+// Add event listener for the download PDF link in HTML
+const downloadPdfLink = document.querySelector('a[href="scientific_paper_v10.pdf"]');
+if (downloadPdfLink) {
+    downloadPdfLink.addEventListener('click', (e) => {
+        if (shouldDisableResearchButtons()) {
+            e.preventDefault();
+            return false;
+        }
+    });
+}
+
 // Project data for modals
 const projectData = {
     procmon: {
@@ -1910,6 +1981,11 @@ function closeModal() {
 // Research Modal Functionality
 if (researchPreviewBtn) {
     researchPreviewBtn.addEventListener('click', () => {
+        // Check if button is disabled
+        if (researchPreviewBtn.disabled) {
+            return;
+        }
+        
         researchModal.style.opacity = '0';
         researchModal.style.display = 'block';
         document.body.style.overflow = 'hidden';
@@ -1937,6 +2013,11 @@ if (researchModal) {
 
 if (researchDownload) {
     researchDownload.addEventListener('click', () => {
+        // Check if research buttons should be disabled
+        if (shouldDisableResearchButtons()) {
+            return;
+        }
+        
         // Create a temporary link element
         const link = document.createElement('a');
         link.href = 'scientific_paper_v10.pdf';
@@ -1962,6 +2043,11 @@ if (researchDownload) {
 
 if (researchPrint) {
     researchPrint.addEventListener('click', () => {
+        // Check if research buttons should be disabled
+        if (shouldDisableResearchButtons()) {
+            return;
+        }
+        
         // Open PDF in new window for printing
         const printWindow = window.open('scientific_paper_v10.pdf', '_blank');
         
