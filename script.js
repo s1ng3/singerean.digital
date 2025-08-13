@@ -1,9 +1,7 @@
-// Language Dropdown Functionality
 const langDropdownBtn = document.getElementById('lang-dropdown-btn');
 const langDropdownMenu = document.getElementById('lang-dropdown-menu');
 const langOptions = document.querySelectorAll('.lang-option');
 
-// Comprehensive translations for all languages
 const translations = {
     en: {
         'nav-home': 'Home',
@@ -41,7 +39,6 @@ const translations = {
         'skills-title': 'Skills & Technologies',
         'contact-title': 'Get In Touch',
         
-        // Experience Section
         'job-title-ntt': 'Infrastructure & Platform Services - Working Student',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': 'Part-time',
@@ -60,7 +57,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': 'Software Engineering',
         
-        // Education Section
         'degree-title-masters': 'Master of Science - M.Sc, Cybersecurity Engineering',
         'university-name': 'Technical University of Cluj Napoca',
         'education-date-masters': 'July 2025 - July 2027',
@@ -76,7 +72,6 @@ const translations = {
         'achievement-2': 'Active participation in technical projects and research',
         'achievement-3': 'Strong foundation in both theoretical and practical engineering concepts',
         
-        // Research Section
         'research-paper-title': 'Development of a Comprehensive Process Management and Optimization System Using the Windows API',
         'research-date': '2025',
         'research-institution': 'Technical University of Cluj-Napoca',
@@ -97,7 +92,6 @@ const translations = {
         'preview-paper': 'Preview Paper',
         'download-pdf': 'Download PDF',
         
-        // Projects Section
         'project-title-1': 'Process Monitoring Application',
         'project-description-1': 'Real-time system monitoring tool for tracking processes, file system, registry, and network activities.',
         'project-title-2': 'SoBuddy',
@@ -112,7 +106,6 @@ const translations = {
         'project-description-6': 'Interactive web application for creating and sharing cat-related blog posts and content.',
         'view-details': 'View Details',
         
-        // Skills Section
         'skill-java': 'Java',
         'skill-java-description': 'Advanced proficiency in Java development with Spring framework and Lombok',
         'skill-python': 'Python',
@@ -134,11 +127,10 @@ const translations = {
         'skill-unity': 'Unity',
         'skill-unity-description': 'Game development and 3D applications',
         
-        // Contact Section
         'contact-connect-title': 'Let\'s Connect',
         'contact-connect-description-1': 'I\'m always interested in new opportunities and collaborations.',
         'contact-connect-description-2': 'Feel free to reach out!',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': 'Cluj-Napoca, Romania',
         'contact-university': 'Technical University of Cluj-Napoca',
         'form-name-label': 'Name',
@@ -146,8 +138,12 @@ const translations = {
         'form-subject-label': 'Subject',
         'form-message-label': 'Message',
         'form-submit': 'Send Message',
+        'form-success': 'Message sent successfully!',
+        'form-error': 'Failed to send message. Please try again.',
+        'form-validation-required': 'Please fill in all fields',
+        'form-validation-email': 'Please enter a valid email address',
+        'form-rate-limit': 'Please wait {seconds} seconds before sending another message',
         
-        // Modal Content
         'cv-modal-title': 'Curriculum Vitae',
         'cv-download': 'Download CV',
         'cv-print': 'Print',
@@ -155,7 +151,6 @@ const translations = {
         'research-download': 'Download Paper',
         'research-print': 'Print',
         
-        // Project Modal Details - English
         'project-modal-title-1': 'Process Monitoring Application',
         'project-modal-description-1': 'A comprehensive real-time system monitoring application that tracks and logs processes, file system, registry, and network activities. This application helps in troubleshooting, performance analysis, and system security monitoring.',
         'project-modal-title-2': 'SoBuddy',
@@ -210,7 +205,6 @@ const translations = {
         'skills-title': 'Competențe',
         'contact-title': 'Contact',
         
-        // Experience Section - Romanian
         'job-title-ntt': 'Infrastructură și Servicii Platformă - Student Muncitor',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': 'Part-time',
@@ -229,7 +223,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': 'Inginerie Software',
         
-        // Research Section - Romanian
         'research-paper-title': 'Dezvoltarea unui Sistem Complet de Gestionare și Optimizare a Proceselor Folosind API-ul Windows',
         'research-date': '2025',
         'research-institution': 'Universitatea Tehnică din Cluj-Napoca',
@@ -250,7 +243,6 @@ const translations = {
         'preview-paper': 'Previzualizare Lucrare',
         'download-pdf': 'Descarcă PDF',
         
-        // Education Section - Romanian
         'degree-title-masters': 'Master of Science - M.Sc, Inginerie Securitate Cibernetică',
         'university-name': 'Universitatea Tehnică din Cluj Napoca',
         'education-date-masters': 'Iulie 2025 - Iulie 2027',
@@ -266,7 +258,6 @@ const translations = {
         'achievement-2': 'Participare activă în proiecte tehnice și cercetare',
         'achievement-3': 'Fundament puternic atât în concepte teoretice cât și practice de inginerie',
         
-        // Projects Section - Romanian
         'project-title-1': 'Aplicație de Monitorizare a Proceselor',
         'project-description-1': 'Instrument de monitorizare a sistemului în timp real pentru urmărirea proceselor, sistemului de fișiere, registrului și activităților de rețea.',
         'project-title-2': 'SoBuddy',
@@ -281,7 +272,7 @@ const translations = {
         'project-description-6': 'Aplicație web interactivă pentru crearea și partajarea postărilor de blog și conținut legat de pisici.',
         'view-details': 'Vezi Detalii',
         
-        // Project Modal Details - Romanian
+
         'project-modal-title-1': 'Aplicație de Monitorizare a Proceselor',
         'project-modal-description-1': 'O aplicație comprehensivă de monitorizare a sistemului în timp real care urmărește și înregistrează procese, sistem de fișiere, registru și activități de rețea. Această aplicație ajută la depanare, analiza performanței și monitorizarea securității sistemului.',
         'project-modal-title-2': 'SoBuddy',
@@ -300,7 +291,6 @@ const translations = {
         'project-modal-technologies-title': 'Tehnologii Utilizate:',
         'project-modal-view-github': 'Vezi pe GitHub',
         
-        // Project Modal Details - Romanian
         'project-modal-title-1': 'Aplicație de Monitorizare a Proceselor',
         'project-modal-description-1': 'O aplicație comprehensivă de monitorizare a sistemului în timp real care urmărește și înregistrează procese, sistem de fișiere, registru și activități de rețea. Această aplicație ajută la depanare, analiza performanței și monitorizarea securității sistemului.',
         'project-modal-title-2': 'SoBuddy',
@@ -319,11 +309,10 @@ const translations = {
         'project-modal-technologies-title': 'Tehnologii Utilizate:',
         'project-modal-view-github': 'Vezi pe GitHub',
         
-        // Contact Section - Romanian
         'contact-connect-title': 'Să Ne Conectăm',
         'contact-connect-description-1': 'Sunt întotdeauna interesat de oportunități noi și colaborări.',
         'contact-connect-description-2': 'Nu ezita să mă contactezi!',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': 'Cluj-Napoca, România',
         'contact-university': 'Universitatea Tehnică din Cluj-Napoca',
         'form-name-label': 'Nume',
@@ -331,8 +320,12 @@ const translations = {
         'form-subject-label': 'Subiect',
         'form-message-label': 'Mesaj',
         'form-submit': 'Trimite Mesaj',
+        'form-success': 'Mesajul a fost trimis cu succes!',
+        'form-error': 'Eșec la trimiterea mesajului. Vă rugăm să încercați din nou.',
+        'form-validation-required': 'Vă rugăm să completați toate câmpurile',
+        'form-validation-email': 'Vă rugăm să introduceți o adresă de email validă',
+        'form-rate-limit': 'Vă rugăm să așteptați {seconds} secunde înainte de a trimite un alt mesaj',
         
-        // Skills Section - Romanian
         'skill-java': 'Java',
         'skill-java-description': 'Competențe avansate în dezvoltarea Java cu framework-ul Spring și Lombok',
         'skill-python': 'Python',
@@ -390,7 +383,6 @@ const translations = {
         'skills-title': 'Fähigkeiten',
         'contact-title': 'Kontakt',
         
-        // Experience Section - German
         'job-title-ntt': 'Infrastruktur & Plattform-Services - Werkstudent',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': 'Teilzeit',
@@ -409,7 +401,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': 'Software-Entwicklung',
         
-        // Research Section - German
         'research-paper-title': 'Entwicklung eines umfassenden Prozessmanagement- und Optimierungssystems unter Verwendung der Windows API',
         'research-date': '2025',
         'research-institution': 'Technische Universität Cluj-Napoca',
@@ -430,7 +421,6 @@ const translations = {
         'preview-paper': 'Arbeit anzeigen',
         'download-pdf': 'PDF herunterladen',
         
-        // Education Section - German
         'degree-title-masters': 'Master of Science - M.Sc, Cybersicherheitstechnik',
         'university-name': 'Technische Universität Cluj Napoca',
         'education-date-masters': 'Juli 2025 - Juli 2027',
@@ -446,7 +436,6 @@ const translations = {
         'achievement-2': 'Aktive Teilnahme an technischen Projekten und Forschung',
         'achievement-3': 'Starke Grundlage sowohl in theoretischen als auch praktischen Ingenieurkonzepten',
         
-        // Projects Section - German
         'project-title-1': 'Prozessüberwachungsanwendung',
         'project-description-1': 'Echtzeit-Systemüberwachungstool zur Verfolgung von Prozessen, Dateisystem, Registrierung und Netzwerkaktivitäten.',
         'project-title-2': 'SoBuddy',
@@ -461,7 +450,6 @@ const translations = {
         'project-description-6': 'Interaktive Webanwendung zum Erstellen und Teilen von katzenbezogenen Blog-Beiträgen und Inhalten.',
         'view-details': 'Details anzeigen',
         
-        // Project Modal Details - German
         'project-modal-title-1': 'Prozessüberwachungsanwendung',
         'project-modal-description-1': 'Eine umfassende Echtzeit-Systemüberwachungsanwendung, die Prozesse, Dateisystem, Registrierung und Netzwerkaktivitäten verfolgt und protokolliert. Diese Anwendung hilft bei der Fehlerbehebung, Leistungsanalyse und Systemüberwachung.',
         'project-modal-title-2': 'SoBuddy',
@@ -480,7 +468,6 @@ const translations = {
         'project-modal-technologies-title': 'Verwendete Technologien:',
         'project-modal-view-github': 'Auf GitHub anzeigen',
         
-        // Project Modal Details - German
         'project-modal-title-1': 'Prozessüberwachungsanwendung',
         'project-modal-description-1': 'Eine umfassende Echtzeit-Systemüberwachungsanwendung, die Prozesse, Dateisystem, Registrierung und Netzwerkaktivitäten verfolgt und protokolliert. Diese Anwendung hilft bei der Fehlerbehebung, Leistungsanalyse und Systemüberwachung.',
         'project-modal-title-2': 'SoBuddy',
@@ -499,11 +486,10 @@ const translations = {
         'project-modal-technologies-title': 'Verwendete Technologien:',
         'project-modal-view-github': 'Auf GitHub anzeigen',
         
-        // Contact Section - German
         'contact-connect-title': 'Lass uns in Verbindung bleiben',
         'contact-connect-description-1': 'Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.',
         'contact-connect-description-2': 'Zögere nicht, mich zu kontaktieren!',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': 'Cluj-Napoca, Rumänien',
         'contact-university': 'Technische Universität Cluj-Napoca',
         'form-name-label': 'Name',
@@ -511,8 +497,12 @@ const translations = {
         'form-subject-label': 'Betreff',
         'form-message-label': 'Nachricht',
         'form-submit': 'Nachricht senden',
+        'form-success': 'Nachricht erfolgreich gesendet!',
+        'form-error': 'Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.',
+        'form-validation-required': 'Bitte füllen Sie alle Felder aus',
+        'form-validation-email': 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
+        'form-rate-limit': 'Bitte warten Sie {seconds} Sekunden, bevor Sie eine weitere Nachricht senden',
         
-        // Skills Section - German
         'skill-java': 'Java',
         'skill-java-description': 'Fortgeschrittene Kenntnisse in Java-Entwicklung mit Spring Framework und Lombok',
         'skill-python': 'Python',
@@ -570,7 +560,6 @@ const translations = {
         'skills-title': 'Compétences',
         'contact-title': 'Contact',
         
-        // Experience Section - French
         'job-title-ntt': 'Infrastructure & Services de Plateforme - Étudiant Travailleur',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': 'Temps partiel',
@@ -589,7 +578,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': 'Ingénierie Logicielle',
         
-        // Research Section - French
         'research-paper-title': 'Développement d\'un Système Complet de Gestion et d\'Optimisation des Processus Utilisant l\'API Windows',
         'research-date': '2025',
         'research-institution': 'Université Technique de Cluj-Napoca',
@@ -610,7 +598,6 @@ const translations = {
         'preview-paper': 'Aperçu de l\'Article',
         'download-pdf': 'Télécharger PDF',
         
-        // Education Section - French
         'degree-title-masters': 'Master of Science - M.Sc, Ingénierie Cybersécurité',
         'university-name': 'Université Technique de Cluj Napoca',
         'education-date-masters': 'Juillet 2025 - Juillet 2027',
@@ -626,7 +613,6 @@ const translations = {
         'achievement-2': 'Participation active aux projets techniques et à la recherche',
         'achievement-3': 'Fondation solide dans les concepts d\'ingénierie théoriques et pratiques',
         
-        // Projects Section - French
         'project-title-1': 'Application de Surveillance des Processus',
         'project-description-1': 'Outil de surveillance système en temps réel pour suivre les processus, le système de fichiers, le registre et les activités réseau.',
         'project-title-2': 'SoBuddy',
@@ -641,7 +627,6 @@ const translations = {
         'project-description-6': 'Application web interactive pour créer et partager des articles de blog et du contenu lié aux chats.',
         'view-details': 'Voir les Détails',
         
-        // Project Modal Details - French
         'project-modal-title-1': 'Application de Surveillance des Processus',
         'project-modal-description-1': 'Une application complète de surveillance système en temps réel qui suit et enregistre les processus, le système de fichiers, le registre et les activités réseau. Cette application aide au dépannage, à l\'analyse des performances et à la surveillance de la sécurité du système.',
         'project-modal-title-2': 'SoBuddy',
@@ -660,7 +645,6 @@ const translations = {
         'project-modal-technologies-title': 'Technologies Utilisées:',
         'project-modal-view-github': 'Voir sur GitHub',
         
-        // Project Modal Details - French
         'project-modal-title-1': 'Application de Surveillance des Processus',
         'project-modal-description-1': 'Une application complète de surveillance système en temps réel qui suit et enregistre les processus, le système de fichiers, le registre et les activités réseau. Cette application aide au dépannage, à l\'analyse des performances et à la surveillance de la sécurité du système.',
         'project-modal-title-2': 'SoBuddy',
@@ -679,11 +663,10 @@ const translations = {
         'project-modal-technologies-title': 'Technologies Utilisées:',
         'project-modal-view-github': 'Voir sur GitHub',
         
-        // Contact Section - French
         'contact-connect-title': 'Connectons-nous',
         'contact-connect-description-1': 'Je suis toujours intéressé par de nouvelles opportunités et collaborations.',
         'contact-connect-description-2': 'N\'hésitez pas à me contacter !',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': 'Cluj-Napoca, Roumanie',
         'contact-university': 'Université Technique de Cluj-Napoca',
         'form-name-label': 'Nom',
@@ -691,8 +674,12 @@ const translations = {
         'form-subject-label': 'Sujet',
         'form-message-label': 'Message',
         'form-submit': 'Envoyer le message',
+        'form-success': 'Message envoyé avec succès !',
+        'form-error': 'Échec de l\'envoi du message. Veuillez réessayer.',
+        'form-validation-required': 'Veuillez remplir tous les champs',
+        'form-validation-email': 'Veuillez entrer une adresse e-mail valide',
+        'form-rate-limit': 'Veuillez attendre {seconds} secondes avant d\'envoyer un autre message',
         
-        // Skills Section - French
         'skill-java': 'Java',
         'skill-java-description': 'Maîtrise avancée du développement Java avec le framework Spring et Lombok',
         'skill-python': 'Python',
@@ -750,7 +737,6 @@ const translations = {
         'skills-title': 'Habilidades',
         'contact-title': 'Contacto',
         
-        // Experience Section - Spanish
         'job-title-ntt': 'Infraestructura y Servicios de Plataforma - Estudiante Trabajador',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': 'Tiempo parcial',
@@ -769,7 +755,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': 'Ingeniería de Software',
         
-        // Research Section - Spanish
         'research-paper-title': 'Desarrollo de un Sistema Integral de Gestión y Optimización de Procesos Utilizando la API de Windows',
         'research-date': '2025',
         'research-institution': 'Universidad Técnica de Cluj-Napoca',
@@ -790,7 +775,6 @@ const translations = {
         'preview-paper': 'Vista Previa del Artículo',
         'download-pdf': 'Descargar PDF',
         
-        // Education Section - Spanish
         'degree-title-masters': 'Master of Science - M.Sc, Ingeniería Ciberseguridad',
         'university-name': 'Universidad Técnica de Cluj Napoca',
         'education-date-masters': 'Julio 2025 - Julio 2027',
@@ -806,7 +790,6 @@ const translations = {
         'achievement-2': 'Participación activa en proyectos técnicos e investigación',
         'achievement-3': 'Base sólida tanto en conceptos de ingeniería teóricos como prácticos',
         
-        // Projects Section - Spanish
         'project-title-1': 'Aplicación de Monitoreo de Procesos',
         'project-description-1': 'Herramienta de monitoreo del sistema en tiempo real para rastrear procesos, sistema de archivos, registro y actividades de red.',
         'project-title-2': 'SoBuddy',
@@ -821,7 +804,6 @@ const translations = {
         'project-description-6': 'Aplicación web interactiva para crear y compartir publicaciones de blog y contenido relacionado con gatos.',
         'view-details': 'Ver Detalles',
         
-        // Project Modal Details - Spanish
         'project-modal-title-1': 'Aplicación de Monitoreo de Procesos',
         'project-modal-description-1': 'Una aplicación completa de monitoreo del sistema en tiempo real que rastrea y registra procesos, sistema de archivos, registro y actividades de red. Esta aplicación ayuda en la resolución de problemas, análisis de rendimiento y monitoreo de seguridad del sistema.',
         'project-modal-title-2': 'SoBuddy',
@@ -840,7 +822,6 @@ const translations = {
         'project-modal-technologies-title': 'Tecnologías Utilizadas:',
         'project-modal-view-github': 'Ver en GitHub',
         
-        // Project Modal Details - Spanish
         'project-modal-title-1': 'Aplicación de Monitoreo de Procesos',
         'project-modal-description-1': 'Una aplicación completa de monitoreo del sistema en tiempo real que rastrea y registra procesos, sistema de archivos, registro y actividades de red. Esta aplicación ayuda en la resolución de problemas, análisis de rendimiento y monitoreo de seguridad del sistema.',
         'project-modal-title-2': 'SoBuddy',
@@ -859,11 +840,10 @@ const translations = {
         'project-modal-technologies-title': 'Tecnologías Utilizadas:',
         'project-modal-view-github': 'Ver en GitHub',
         
-        // Contact Section - Spanish
         'contact-connect-title': 'Conectémonos',
         'contact-connect-description-1': 'Siempre estoy interesado en nuevas oportunidades y colaboraciones.',
         'contact-connect-description-2': '¡No dudes en contactarme!',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': 'Cluj-Napoca, Rumania',
         'contact-university': 'Universidad Técnica de Cluj-Napoca',
         'form-name-label': 'Nombre',
@@ -871,8 +851,12 @@ const translations = {
         'form-subject-label': 'Asunto',
         'form-message-label': 'Mensaje',
         'form-submit': 'Enviar mensaje',
+        'form-success': '¡Mensaje enviado con éxito!',
+        'form-error': 'Error al enviar el mensaje. Por favor, inténtalo de nuevo.',
+        'form-validation-required': 'Por favor, completa todos los campos',
+        'form-validation-email': 'Por favor, introduce una dirección de correo válida',
+        'form-rate-limit': 'Por favor, espera {seconds} segundos antes de enviar otro mensaje',
         
-        // Skills Section - Spanish
         'skill-java': 'Java',
         'skill-java-description': 'Competencia avanzada en desarrollo Java con framework Spring y Lombok',
         'skill-python': 'Python',
@@ -930,7 +914,6 @@ const translations = {
         'skills-title': 'Competenze',
         'contact-title': 'Contatto',
         
-        // Experience Section - Italian
         'job-title-ntt': 'Infrastruttura e Servizi di Piattaforma - Studente Lavoratore',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': 'Part-time',
@@ -949,7 +932,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': 'Ingegneria del Software',
         
-        // Research Section - Italian
         'research-paper-title': 'Sviluppo di un Sistema Completo di Gestione e Ottimizzazione dei Processi Utilizzando l\'API Windows',
         'research-date': '2025',
         'research-institution': 'Università Tecnica di Cluj-Napoca',
@@ -970,7 +952,6 @@ const translations = {
         'preview-paper': 'Anteprima Articolo',
         'download-pdf': 'Scarica PDF',
         
-        // Education Section - Italian
         'degree-title-masters': 'Master of Science - M.Sc, Ingegneria della Sicurezza Informatica',
         'university-name': 'Università Tecnica di Cluj Napoca',
         'education-date-masters': 'Luglio 2025 - Luglio 2027',
@@ -986,7 +967,6 @@ const translations = {
         'achievement-2': 'Partecipazione attiva a progetti tecnici e ricerca',
         'achievement-3': 'Fondazione solida sia in concetti di ingegneria teorici che pratici',
         
-        // Projects Section - Italian
         'project-title-1': 'Applicazione di Monitoraggio dei Processi',
         'project-description-1': 'Strumento di monitoraggio del sistema in tempo reale per tracciare processi, file system, registro e attività di rete.',
         'project-title-2': 'SoBuddy',
@@ -1001,7 +981,6 @@ const translations = {
         'project-description-6': 'Applicazione web interattiva per creare e condividere post di blog e contenuti relativi ai gatti.',
         'view-details': 'Vedi Dettagli',
         
-        // Project Modal Details - Italian
         'project-modal-title-1': 'Applicazione di Monitoraggio dei Processi',
         'project-modal-description-1': 'Un\'applicazione completa di monitoraggio del sistema in tempo reale che traccia e registra processi, file system, registro e attività di rete. Questa applicazione aiuta nel troubleshooting, analisi delle prestazioni e monitoraggio della sicurezza del sistema.',
         'project-modal-title-2': 'SoBuddy',
@@ -1020,7 +999,6 @@ const translations = {
         'project-modal-technologies-title': 'Tecnologie Utilizzate:',
         'project-modal-view-github': 'Vedi su GitHub',
         
-        // Project Modal Details - Italian
         'project-modal-title-1': 'Applicazione di Monitoraggio dei Processi',
         'project-modal-description-1': 'Un\'applicazione completa di monitoraggio del sistema in tempo reale che traccia e registra processi, file system, registro e attività di rete. Questa applicazione aiuta nel troubleshooting, analisi delle prestazioni e monitoraggio della sicurezza del sistema.',
         'project-modal-title-2': 'SoBuddy',
@@ -1039,11 +1017,10 @@ const translations = {
         'project-modal-technologies-title': 'Tecnologie Utilizzate:',
         'project-modal-view-github': 'Vedi su GitHub',
         
-        // Contact Section - Italian
         'contact-connect-title': 'Mettiamoci in contatto',
         'contact-connect-description-1': 'Sono sempre interessato a nuove opportunità e collaborazioni.',
         'contact-connect-description-2': 'Non esitare a contattarmi!',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': 'Cluj-Napoca, Romania',
         'contact-university': 'Università Tecnica di Cluj-Napoca',
         'form-name-label': 'Nome',
@@ -1051,8 +1028,12 @@ const translations = {
         'form-subject-label': 'Oggetto',
         'form-message-label': 'Messaggio',
         'form-submit': 'Invia messaggio',
+        'form-success': 'Messaggio inviato con successo!',
+        'form-error': 'Impossibile inviare il messaggio. Riprova.',
+        'form-validation-required': 'Compila tutti i campi',
+        'form-validation-email': 'Inserisci un indirizzo email valido',
+        'form-rate-limit': 'Attendi {seconds} secondi prima di inviare un altro messaggio',
         
-        // Skills Section - Italian
         'skill-java': 'Java',
         'skill-java-description': 'Competenza avanzata nello sviluppo Java con framework Spring e Lombok',
         'skill-python': 'Python',
@@ -1110,7 +1091,6 @@ const translations = {
         'skills-title': 'スキル',
         'contact-title': 'お問い合わせ',
         
-        // Experience Section - Japanese
         'job-title-ntt': 'インフラストラクチャー＆プラットフォームサービス - 学生労働者',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': 'パートタイム',
@@ -1129,7 +1109,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': 'ソフトウェアエンジニアリング',
         
-        // Research Section - Japanese
         'research-paper-title': 'Windows APIを使用した包括的なプロセス管理・最適化システムの開発',
         'research-date': '2025',
         'research-institution': 'クルジュ・ナポカ工科大学',
@@ -1150,7 +1129,6 @@ const translations = {
         'preview-paper': '論文プレビュー',
         'download-pdf': 'PDFダウンロード',
         
-        // Education Section - Japanese
         'degree-title-masters': 'Master of Science - M.Sc, サイバーセキュリティ工学',
         'university-name': 'クルジュ・ナポカ工科大学',
         'education-date-masters': '2025年7月 - 2027年7月',
@@ -1166,7 +1144,6 @@ const translations = {
         'achievement-2': '技術プロジェクトと研究への積極的な参加',
         'achievement-3': '理論的および実践的工学概念の両方における強固な基盤',
         
-        // Projects Section - Japanese
         'project-title-1': 'プロセス監視アプリケーション',
         'project-description-1': 'プロセス、ファイルシステム、レジストリ、ネットワーク活動を追跡するリアルタイムシステム監視ツール。',
         'project-title-2': 'SoBuddy',
@@ -1181,7 +1158,6 @@ const translations = {
         'project-description-6': '猫関連のブログ投稿やコンテンツを作成・共有するためのインタラクティブなWebアプリケーション。',
         'view-details': '詳細を見る',
         
-        // Project Modal Details - Japanese
         'project-modal-title-1': 'プロセス監視アプリケーション',
         'project-modal-description-1': 'プロセス、ファイルシステム、レジストリ、ネットワーク活動を追跡・記録する包括的なリアルタイムシステム監視アプリケーション。このアプリケーションはトラブルシューティング、パフォーマンス分析、システムセキュリティ監視に役立ちます。',
         'project-modal-title-2': 'SoBuddy',
@@ -1200,7 +1176,6 @@ const translations = {
         'project-modal-technologies-title': '使用技術:',
         'project-modal-view-github': 'GitHubで見る',
         
-        // Project Modal Details - Japanese
         'project-modal-title-1': 'プロセス監視アプリケーション',
         'project-modal-description-1': 'プロセス、ファイルシステム、レジストリ、ネットワーク活動を追跡・記録する包括的なリアルタイムシステム監視アプリケーション。このアプリケーションはトラブルシューティング、パフォーマンス分析、システムセキュリティ監視に役立ちます。',
         'project-modal-title-2': 'SoBuddy',
@@ -1219,11 +1194,10 @@ const translations = {
         'project-modal-technologies-title': '使用技術:',
         'project-modal-view-github': 'GitHubで見る',
         
-        // Contact Section - Japanese
         'contact-connect-title': 'つながりましょう',
         'contact-connect-description-1': '私は常に新しい機会やコラボレーションに興味があります。',
         'contact-connect-description-2': 'お気軽にご連絡ください！',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': 'クルジュ・ナポカ、ルーマニア',
         'contact-university': 'クルジュ・ナポカ工科大学',
         'form-name-label': 'お名前',
@@ -1231,8 +1205,12 @@ const translations = {
         'form-subject-label': '件名',
         'form-message-label': 'メッセージ',
         'form-submit': 'メッセージを送信',
+        'form-success': 'メッセージが正常に送信されました！',
+        'form-error': 'メッセージの送信に失敗しました。もう一度お試しください。',
+        'form-validation-required': 'すべてのフィールドを入力してください',
+        'form-validation-email': '有効なメールアドレスを入力してください',
+        'form-rate-limit': '別のメッセージを送信する前に{seconds}秒待ってください',
         
-        // Skills Section - Japanese
         'skill-java': 'Java',
         'skill-java-description': 'SpringフレームワークとLombokを使用したJava開発の高度なスキル',
         'skill-python': 'Python',
@@ -1290,7 +1268,6 @@ const translations = {
         'skills-title': '技能',
         'contact-title': '联系',
         
-        // Experience Section - Chinese
         'job-title-ntt': '基础设施和平台服务 - 工作学生',
         'company-ntt': 'NTT DATA',
         'employment-type-part-time': '兼职',
@@ -1309,7 +1286,6 @@ const translations = {
         'skill-cpp': 'C++',
         'skill-software-engineering': '软件工程',
         
-        // Research Section - Chinese
         'research-paper-title': '使用Windows API开发综合进程管理和优化系统',
         'research-date': '2025',
         'research-institution': '克卢日-纳波卡技术大学',
@@ -1330,7 +1306,6 @@ const translations = {
         'preview-paper': '预览论文',
         'download-pdf': '下载PDF',
         
-        // Education Section - Chinese
         'degree-title-masters': 'Master of Science - M.Sc, 网络安全工程',
         'university-name': '克卢日-纳波卡技术大学',
         'education-date-masters': '2025年7月 - 2027年7月',
@@ -1346,7 +1321,6 @@ const translations = {
         'achievement-2': '积极参与技术项目和研究',
         'achievement-3': '在理论和实践工程概念方面都有坚实基础',
         
-        // Projects Section - Chinese
         'project-title-1': '进程监控应用程序',
         'project-description-1': '实时系统监控工具，用于跟踪进程、文件系统、注册表和网络活动。',
         'project-title-2': 'SoBuddy',
@@ -1361,7 +1335,6 @@ const translations = {
         'project-description-6': '用于创建和分享猫咪相关博客文章和内容的交互式Web应用程序。',
         'view-details': '查看详情',
         
-        // Project Modal Details - Chinese
         'project-modal-title-1': '进程监控应用程序',
         'project-modal-description-1': '一个全面的实时系统监控应用程序，用于跟踪和记录进程、文件系统、注册表和网络活动。此应用程序有助于故障排除、性能分析和系统安全监控。',
         'project-modal-title-2': 'SoBuddy',
@@ -1380,7 +1353,6 @@ const translations = {
         'project-modal-technologies-title': '使用技术:',
         'project-modal-view-github': '在GitHub上查看',
         
-        // Project Modal Details - Chinese
         'project-modal-title-1': '进程监控应用程序',
         'project-modal-description-1': '一个全面的实时系统监控应用程序，用于跟踪和记录进程、文件系统、注册表和网络活动。此应用程序有助于故障排除、性能分析和系统安全监控。',
         'project-modal-title-2': 'SoBuddy',
@@ -1399,11 +1371,10 @@ const translations = {
         'project-modal-technologies-title': '使用技术:',
         'project-modal-view-github': '在GitHub上查看',
         
-        // Contact Section - Chinese
         'contact-connect-title': '让我们联系',
         'contact-connect-description-1': '我一直对新的机会和合作感兴趣。',
         'contact-connect-description-2': '请随时联系我！',
-        'contact-email': 'tudor.singerean@yahoo.com',
+        'contact-email': 'singerean.digital@gmail.com',
         'contact-location': '克卢日-纳波卡，罗马尼亚',
         'contact-university': '克卢日-纳波卡技术大学',
         'form-name-label': '姓名',
@@ -1411,8 +1382,12 @@ const translations = {
         'form-subject-label': '主题',
         'form-message-label': '消息',
         'form-submit': '发送消息',
+        'form-success': '消息发送成功！',
+        'form-error': '消息发送失败。请重试。',
+        'form-validation-required': '请填写所有字段',
+        'form-validation-email': '请输入有效的邮箱地址',
+        'form-rate-limit': '请等待{seconds}秒后再发送另一条消息',
         
-        // Skills Section - Chinese
         'skill-java': 'Java',
         'skill-java-description': '使用Spring框架和Lombok的Java开发高级技能',
         'skill-python': 'Python',
@@ -1436,7 +1411,6 @@ const translations = {
     }
 };
 
-// Language dropdown functionality
 function toggleLanguageDropdown() {
     const isOpen = langDropdownMenu.classList.contains('show');
     langDropdownMenu.classList.toggle('show');
@@ -1451,7 +1425,6 @@ function closeLanguageDropdown() {
 }
 
 function changeLanguage(lang) {
-    // Update button states
     langOptions.forEach(option => {
         option.classList.remove('active');
     });
@@ -1461,16 +1434,13 @@ function changeLanguage(lang) {
         activeOption.classList.add('active');
     }
     
-    // Update dropdown button
     const flag = activeOption.querySelector('.flag').textContent;
     const langText = activeOption.querySelector('.lang-text').textContent;
     langDropdownBtn.querySelector('.flag').textContent = flag;
     langDropdownBtn.querySelector('.lang-text').textContent = langText.split(' ')[0];
     
-    // Update document language
     document.documentElement.lang = lang;
     
-    // Apply translations
     if (translations[lang]) {
         Object.keys(translations[lang]).forEach(key => {
             const elements = document.querySelectorAll(`[data-translate="${key}"]`);
@@ -1480,14 +1450,11 @@ function changeLanguage(lang) {
         });
     }
     
-    // Store language preference
     localStorage.setItem('preferred-language', lang);
     
-    // Close dropdown
     closeLanguageDropdown();
 }
 
-// Initialize language dropdown
 if (langDropdownBtn) {
     langDropdownBtn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -1504,18 +1471,16 @@ if (langDropdownMenu) {
     });
 }
 
-// Close dropdown when clicking outside
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.language-dropdown')) {
         closeLanguageDropdown();
     }
 });
 
-// Load saved language preference
 const savedLanguage = localStorage.getItem('preferred-language') || 'en';
 changeLanguage(savedLanguage);
 
-// Animated Counter Function
+
 function animateCounter(element, target, duration = 6000) {
   let start = 0;
   const increment = target / (duration / 16);
@@ -1535,7 +1500,6 @@ function animateCounter(element, target, duration = 6000) {
   updateCounter();
 }
 
-// Intersection Observer for Counter Animation
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1549,7 +1513,6 @@ const counterObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 
-// PWA Service Worker Registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
@@ -1562,23 +1525,18 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Smooth page transitions
 document.addEventListener('DOMContentLoaded', () => {
-  // Add page transition class
   document.body.classList.add('page-transition');
   
-  // Initialize counter observers
   document.querySelectorAll('.stat').forEach(stat => {
     counterObserver.observe(stat);
   });
   
-  // Smooth transitions for all internal links
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const target = document.querySelector(link.getAttribute('href'));
       if (target) {
-        // Add transition effect
         document.body.classList.add('transitioning');
         
         target.scrollIntoView({
@@ -1586,7 +1544,6 @@ document.addEventListener('DOMContentLoaded', () => {
           block: 'start'
         });
         
-        // Remove transition class after animation
         setTimeout(() => {
           document.body.classList.remove('transitioning');
         }, 1000);
@@ -1595,7 +1552,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// DOM Elements
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
@@ -1606,7 +1562,6 @@ const projectModal = document.getElementById('project-modal');
 const modalClose = document.querySelector('.modal-close');
 const scrollCue = document.querySelector('.scroll-cue');
 
-// CV Modal Elements
 const cvButton = document.getElementById('cv-button');
 const cvModal = document.getElementById('cv-modal');
 const cvModalClose = document.getElementById('cv-modal-close');
@@ -1614,7 +1569,6 @@ const cvDownload = document.getElementById('cv-download');
 const cvPrint = document.getElementById('cv-print');
 const cvIframe = document.getElementById('cv-iframe');
 
-// Research Modal Elements
 const researchPreviewBtn = document.querySelector('.research-preview');
 const researchModal = document.getElementById('research-modal');
 const researchModalClose = document.getElementById('research-modal-close');
@@ -1622,15 +1576,12 @@ const researchDownload = document.getElementById('research-download');
 const researchPrint = document.getElementById('research-print');
 const researchIframe = document.getElementById('research-iframe');
 
-// Function to check if research paper buttons should be disabled
 function shouldDisableResearchButtons() {
     const currentDate = new Date();
-    // Set target date to October 9th, 2025 at 00:00:00 UTC
     const targetDate = new Date('2025-10-09T00:00:00.000Z');
     return currentDate < targetDate;
 }
 
-// Function to disable research paper buttons
 function disableResearchButtons() {
     if (researchPreviewBtn) {
         researchPreviewBtn.disabled = true;
@@ -1639,21 +1590,17 @@ function disableResearchButtons() {
         researchPreviewBtn.title = 'Available from October 9th, 2025';
     }
     
-    // Disable the download PDF link
     const downloadPdfLink = document.querySelector('a[href="scientific_paper_v10.pdf"]');
     if (downloadPdfLink) {
         downloadPdfLink.style.pointerEvents = 'none';
         downloadPdfLink.style.opacity = '0.5';
         downloadPdfLink.style.cursor = 'not-allowed';
         downloadPdfLink.title = 'Available from October 9th, 2025';
-        // Remove the download attribute to prevent download
         downloadPdfLink.removeAttribute('download');
-        // Change the href to prevent navigation
         downloadPdfLink.href = 'javascript:void(0)';
     }
 }
 
-// Function to enable research paper buttons
 function enableResearchButtons() {
     if (researchPreviewBtn) {
         researchPreviewBtn.disabled = false;
@@ -1662,27 +1609,23 @@ function enableResearchButtons() {
         researchPreviewBtn.title = '';
     }
     
-    // Enable the download PDF link - look for any link that might have been disabled
     const downloadPdfLink = document.querySelector('a[href="javascript:void(0)"]') || document.querySelector('a[data-translate="download-pdf"]');
     if (downloadPdfLink) {
         downloadPdfLink.style.pointerEvents = 'auto';
         downloadPdfLink.style.opacity = '1';
         downloadPdfLink.style.cursor = 'pointer';
         downloadPdfLink.title = '';
-        // Restore the download attribute and href
         downloadPdfLink.setAttribute('download', '');
         downloadPdfLink.href = 'scientific_paper_v10.pdf';
     }
 }
 
-// Check and apply button state on page load
 if (shouldDisableResearchButtons()) {
     disableResearchButtons();
 } else {
     enableResearchButtons();
 }
 
-// Add event listener for the download PDF link in HTML
 const downloadPdfLink = document.querySelector('a[href="scientific_paper_v10.pdf"]');
 if (downloadPdfLink) {
     downloadPdfLink.addEventListener('click', (e) => {
@@ -1693,7 +1636,6 @@ if (downloadPdfLink) {
     });
 }
 
-// Project data for modals
 const projectData = {
     procmon: {
         title: "Process Monitoring Application",
@@ -1733,15 +1675,11 @@ const projectData = {
     }
 };
 
-// Mobile Navigation Toggle
-
-// Mobile Navigation Toggle
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     navToggle.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -1749,7 +1687,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Performance optimization: Throttle function
 function throttle(func, limit) {
     let inThrottle;
     return function() {
@@ -1763,28 +1700,22 @@ function throttle(func, limit) {
     }
 }
 
-// Navbar hide/show variables
-let scrollThreshold = 10; // Minimum scroll distance to trigger hide/show
+let scrollThreshold = 10;
 
-// Single consolidated scroll handler
 const handleScroll = throttle(() => {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollDifference = Math.abs(currentScrollTop - lastScrollTop);
     
-    // Navbar hide/show logic
     if (scrollDifference > scrollThreshold) {
         if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
-            // Scrolling down - hide navbar
             navbar.classList.remove('navbar-visible');
             navbar.classList.add('navbar-hidden');
         } else if (currentScrollTop < lastScrollTop) {
-            // Scrolling up - show navbar
             navbar.classList.remove('navbar-hidden');
             navbar.classList.add('navbar-visible');
         }
     }
     
-    // Navbar background effect
     if (window.scrollY > 100) {
         navbar.style.background = 'rgba(0, 0, 0, 0.98)';
         navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
@@ -1793,14 +1724,12 @@ const handleScroll = throttle(() => {
         navbar.style.boxShadow = 'none';
     }
     
-    // Back to top button
     if (window.scrollY > 400) {
         backToTop.classList.add('show');
     } else {
         backToTop.classList.remove('show');
     }
     
-    // Parallax effect
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     const particles = document.querySelector('.particles');
@@ -1810,10 +1739,8 @@ const handleScroll = throttle(() => {
     }
 }, 16); // ~60fps
 
-// Add single scroll event listener
 window.addEventListener('scroll', handleScroll);
 
-// Back to Top Button
 backToTop.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
@@ -1821,7 +1748,6 @@ backToTop.addEventListener('click', () => {
     });
 });
 
-// Theme Toggle
 themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -1829,25 +1755,21 @@ themeToggle.addEventListener('click', () => {
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     
-    // Update icon
     const icon = themeToggle.querySelector('i');
     icon.className = newTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
 });
 
-// Load saved theme or start with dark theme if no preference is saved
 const savedTheme = localStorage.getItem('theme');
 const initialTheme = savedTheme || 'dark';
 document.documentElement.setAttribute('data-theme', initialTheme);
 const icon = themeToggle.querySelector('i');
 icon.className = initialTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
 
-// Scroll Cue
 scrollCue.addEventListener('click', () => {
     const aboutSection = document.getElementById('about');
     aboutSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Project Modal Functionality
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', (e) => {
         e.preventDefault();
@@ -1857,15 +1779,12 @@ document.querySelectorAll('.project-card').forEach(card => {
         const project = projectData[projectId];
         
         if (project) {
-            // Prevent multiple rapid clicks
             if (projectModal.style.display === 'block') {
                 return;
             }
             
-            // Get current language
             const currentLang = document.documentElement.lang || 'en';
             
-            // Update modal content using translations
             const modalTitle = document.getElementById('modal-title');
             const modalDescription = document.getElementById('modal-description');
             const modalTechnologies = document.getElementById('modal-technologies');
@@ -1873,7 +1792,6 @@ document.querySelectorAll('.project-card').forEach(card => {
             const modalGithub = document.getElementById('modal-github');
             const modalClose = document.querySelector('.modal-close');
             
-            // Map project IDs to translation keys
             const projectKeyMap = {
                 'procmon': '1',
                 'sobuddy': '2',
@@ -1886,23 +1804,21 @@ document.querySelectorAll('.project-card').forEach(card => {
             const projectNumber = projectKeyMap[projectId];
             
             if (projectNumber && translations[currentLang]) {
-                // Update title and description using translations
                 const titleKey = `project-modal-title-${projectNumber}`;
                 const descriptionKey = `project-modal-description-${projectNumber}`;
                 
                 if (translations[currentLang][titleKey]) {
                     modalTitle.textContent = translations[currentLang][titleKey];
                 } else {
-                    modalTitle.textContent = project.title; // Fallback to English
+                    modalTitle.textContent = project.title;
                 }
                 
                 if (translations[currentLang][descriptionKey]) {
                     modalDescription.textContent = translations[currentLang][descriptionKey];
                 } else {
-                    modalDescription.textContent = project.description; // Fallback to English
+                    modalDescription.textContent = project.description;
                 }
                 
-                // Update modal interface elements
                 if (translations[currentLang]['project-modal-technologies-title']) {
                     modalTechnologiesTitle.textContent = translations[currentLang]['project-modal-technologies-title'];
                 }
@@ -1915,61 +1831,51 @@ document.querySelectorAll('.project-card').forEach(card => {
                     modalClose.textContent = translations[currentLang]['project-modal-close'];
                 }
             } else {
-                // Fallback to English if translation not found
                 modalTitle.textContent = project.title;
                 modalDescription.textContent = project.description;
             }
             
-            // Update GitHub link
             modalGithub.href = project.github;
             modalGithub.setAttribute('target', '_blank');
             modalGithub.setAttribute('rel', 'noopener noreferrer');
             
-            // Update technologies (keep original as they are technical terms)
             modalTechnologies.innerHTML = project.technologies.map(tech => 
                 `<span class="tech-tag">${tech}</span>`
             ).join('');
             
-            // Smooth modal opening
             projectModal.style.opacity = '0';
             projectModal.style.display = 'block';
             document.body.style.overflow = 'hidden';
             
-            // Trigger reflow
             projectModal.offsetHeight;
             
             projectModal.style.opacity = '1';
             
-            // Debug: Log the GitHub URL
             console.log('GitHub URL set to:', project.github);
         }
     });
 });
 
-// Close modal
 modalClose.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
     closeModal();
 });
 
-// Close modal when clicking outside
 projectModal.addEventListener('click', (e) => {
     if (e.target === projectModal) {
         closeModal();
     }
 });
 
-// Ensure GitHub link works properly
 document.getElementById('modal-github').addEventListener('click', (e) => {
-    e.stopPropagation(); // Prevent modal from closing when clicking the link
+    e.stopPropagation();
     const href = e.currentTarget.href;
     if (href && href !== '#') {
         window.open(href, '_blank', 'noopener,noreferrer');
     }
 });
 
-// Function to close modal
 function closeModal() {
     projectModal.style.opacity = '0';
     setTimeout(() => {
@@ -1978,10 +1884,8 @@ function closeModal() {
     }, 300);
 }
 
-// Research Modal Functionality
 if (researchPreviewBtn) {
     researchPreviewBtn.addEventListener('click', () => {
-        // Check if button is disabled
         if (researchPreviewBtn.disabled) {
             return;
         }
@@ -1990,7 +1894,6 @@ if (researchPreviewBtn) {
         researchModal.style.display = 'block';
         document.body.style.overflow = 'hidden';
         
-        // Trigger reflow
         researchModal.offsetHeight;
         
         researchModal.style.opacity = '1';
@@ -2013,23 +1916,19 @@ if (researchModal) {
 
 if (researchDownload) {
     researchDownload.addEventListener('click', () => {
-        // Check if research buttons should be disabled
         if (shouldDisableResearchButtons()) {
             return;
         }
         
-        // Create a temporary link element
         const link = document.createElement('a');
         link.href = 'scientific_paper_v10.pdf';
         link.download = 'Advanced-Cybersecurity-Methodologies-Research-Paper.pdf';
         link.target = '_blank';
         
-        // Trigger the download
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
         
-        // Show success feedback
         const originalText = researchDownload.innerHTML;
         researchDownload.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
         researchDownload.style.background = 'var(--red-secondary)';
@@ -2043,12 +1942,10 @@ if (researchDownload) {
 
 if (researchPrint) {
     researchPrint.addEventListener('click', () => {
-        // Check if research buttons should be disabled
         if (shouldDisableResearchButtons()) {
             return;
         }
         
-        // Open PDF in new window for printing
         const printWindow = window.open('scientific_paper_v10.pdf', '_blank');
         
         if (printWindow) {
@@ -2056,7 +1953,6 @@ if (researchPrint) {
                 printWindow.print();
             };
         } else {
-            // Fallback: try to print the iframe
             if (researchIframe && researchIframe.contentWindow) {
                 researchIframe.contentWindow.print();
             }
@@ -2072,13 +1968,11 @@ function closeResearchModal() {
     }, 300);
 }
 
-// CV Modal Functionality
 cvButton.addEventListener('click', () => {
     cvModal.style.opacity = '0';
     cvModal.style.display = 'block';
     document.body.style.overflow = 'hidden';
     
-    // Trigger reflow
     cvModal.offsetHeight;
     
     cvModal.style.opacity = '1';
@@ -2095,18 +1989,15 @@ cvModal.addEventListener('click', (e) => {
 });
 
 cvDownload.addEventListener('click', () => {
-    // Create a temporary link element
     const link = document.createElement('a');
     link.href = 'resume.pdf';
     link.download = 'Tudor-Cristian-Singerean-Resume.pdf';
     link.target = '_blank';
     
-    // Trigger the download
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     
-    // Show success feedback
     const originalText = cvDownload.innerHTML;
     cvDownload.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
     cvDownload.style.background = 'var(--red-secondary)';
@@ -2118,7 +2009,6 @@ cvDownload.addEventListener('click', () => {
 });
 
 cvPrint.addEventListener('click', () => {
-    // Open PDF in new window for printing
     const printWindow = window.open('resume.pdf', '_blank');
     
     if (printWindow) {
@@ -2126,7 +2016,6 @@ cvPrint.addEventListener('click', () => {
             printWindow.print();
         };
     } else {
-        // Fallback: try to print the iframe
         const iframe = document.getElementById('cv-iframe');
         if (iframe && iframe.contentWindow) {
             iframe.contentWindow.print();
@@ -2142,83 +2031,201 @@ function closeCVModal() {
     }, 300);
 }
 
-// Contact Form Handling
-contactForm.addEventListener('submit', (e) => {
+emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+
+function getTranslation(key) {
+    const currentLang = document.documentElement.lang || 'en';
+    const langTranslations = translations[currentLang] || translations['en'];
+    return langTranslations[key] || key;
+}
+
+let lastSubmissionTime = 0;
+const SUBMISSION_COOLDOWN = 30000;
+
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
-    const formData = new FormData(contactForm);
     const submitButton = contactForm.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
     
-    // Simulate form submission
-    submitButton.textContent = 'Sending...';
+    const now = Date.now();
+    if (now - lastSubmissionTime < SUBMISSION_COOLDOWN) {
+        const remainingTime = Math.ceil((SUBMISSION_COOLDOWN - (now - lastSubmissionTime)) / 1000);
+        const rateLimitMessage = getTranslation('form-rate-limit').replace('{seconds}', remainingTime);
+        showNotification(rateLimitMessage, 'error');
+        return;
+    }
+    
+    const formData = new FormData(contactForm);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+    
+    if (!name || !email || !subject || !message) {
+        showNotification(getTranslation('form-validation-required'), 'error');
+        return;
+    }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        showNotification(getTranslation('form-validation-email'), 'error');
+        return;
+    }
+    
+    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     submitButton.disabled = true;
     
-    setTimeout(() => {
-        // Success animation
-        submitButton.textContent = 'Message Sent!';
+    try {
+        const now = new Date();
+        const timeString = now.toLocaleString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        });
+
+        const result = await emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, {
+            name: name,
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message,
+            to_name: EMAILJS_CONFIG.RECIPIENT_NAME,
+            time: timeString
+        });
+        
+        showNotification(getTranslation('form-success'), 'success');
+        submitButton.textContent = getTranslation('form-success');
         submitButton.style.background = 'var(--red-secondary)';
         
-        // Reset form
+        lastSubmissionTime = Date.now();
+        
         contactForm.reset();
+        
+        const counter = document.getElementById('message-counter');
+        if (counter) {
+            counter.textContent = '0/1000';
+            counter.style.color = 'var(--text-secondary)';
+        }
         
         setTimeout(() => {
             submitButton.textContent = originalText;
             submitButton.style.background = '';
             submitButton.disabled = false;
-        }, 2000);
-    }, 1500);
+        }, 3000);
+        
+    } catch (error) {
+        console.error('EmailJS Error:', error);
+        
+        showNotification(getTranslation('form-error'), 'error');
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    }
 });
 
-// Auto-expand textarea
+function showNotification(message, type = 'info') {
+    const existingNotification = document.querySelector('.notification');
+    if (existingNotification) {
+        existingNotification.remove();
+    }
+    
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+            <span>${message}</span>
+        </div>
+        <button class="notification-close" onclick="this.parentElement.remove()">
+            <i class="fas fa-times"></i>
+        </button>
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        if (notification.parentElement) {
+            notification.remove();
+        }
+    }, 5000);
+}
+
 const messageTextarea = document.getElementById('message');
 messageTextarea.addEventListener('input', () => {
+    const maxLength = 1000;
+    const currentLength = messageTextarea.value.length;
+    
+    if (currentLength > maxLength) {
+        messageTextarea.value = messageTextarea.value.substring(0, maxLength);
+    }
+    
     messageTextarea.style.height = 'auto';
     messageTextarea.style.height = messageTextarea.scrollHeight + 'px';
+    
+    const counter = document.getElementById('message-counter');
+    
+    if (counter) {
+        const finalLength = Math.min(currentLength, maxLength);
+        counter.textContent = `${finalLength}/${maxLength}`;
+        const newColor = finalLength > maxLength * 0.9 ? 'var(--red-primary)' : 'var(--text-secondary)';
+        if (counter.style.color !== newColor) {
+            counter.style.color = newColor;
+            counter.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                counter.style.transform = 'scale(1)';
+            }, 150);
+        }
+    }
 });
 
-// Samsung-style smooth section transitions
+const messageFormGroup = document.querySelector('#message').closest('.form-group');
+if (messageFormGroup && !document.getElementById('message-counter')) {
+    const counter = document.createElement('span');
+    counter.id = 'message-counter';
+    counter.className = 'char-counter';
+    counter.textContent = '0/1000';
+    messageFormGroup.appendChild(counter);
+}
+
 let scrollDirection = 'down';
 let lastScrollTop = 0;
-const animatedSections = new Set(); // Track which sections have been animated
+const animatedSections = new Set();
 let resizeTimeout;
 
-// Track scroll direction
 window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
     lastScrollTop = scrollTop;
 });
 
-// Handle window resize to prevent animation glitches
 window.addEventListener('resize', () => {
-    // Clear existing timeout
+
     if (resizeTimeout) {
         clearTimeout(resizeTimeout);
     }
     
-    // Debounce resize events
     resizeTimeout = setTimeout(() => {
-        // Reset project card animations to prevent blinking
+        
         const projectCards = document.querySelectorAll('.project-card');
         projectCards.forEach(card => {
             card.style.animation = 'none';
-            card.offsetHeight; // Trigger reflow
+            card.offsetHeight;
             card.style.animation = null;
         });
         
-        // Recalculate grid layout
+        
         const projectsGrid = document.querySelector('.projects-grid');
         if (projectsGrid) {
             projectsGrid.style.display = 'none';
-            projectsGrid.offsetHeight; // Trigger reflow
+            projectsGrid.offsetHeight;
             projectsGrid.style.display = 'grid';
         }
         
-        // Reinitialize project cards for new screen size
         initializeProjectCards();
         
-        // Update mobile optimizations
         if (window.innerWidth <= 768) {
             document.body.classList.add('mobile-optimized');
         } else {
@@ -2227,10 +2234,9 @@ window.addEventListener('resize', () => {
     }, 150);
 });
 
-// Section transition observer - triggers only once per section entry
 const sectionObserverOptions = {
-    threshold: 0.3, // Single threshold for cleaner triggering
-    rootMargin: '-15% 0px -15% 0px' // Only trigger when section is well within viewport
+    threshold: 0.3,
+    rootMargin: '-15% 0px -15% 0px'
 };
 
 const sectionObserver = new IntersectionObserver((entries) => {
@@ -2239,14 +2245,14 @@ const sectionObserver = new IntersectionObserver((entries) => {
         const sectionId = section.id || section.className;
         
         if (entry.isIntersecting) {
-            // Only animate if this section hasn't been animated yet
+            
             if (!animatedSections.has(sectionId)) {
                 animatedSections.add(sectionId);
                 
                 section.classList.add('section-visible');
                 section.classList.remove('section-hidden');
                 
-                // Add direction-specific classes
+                
                 if (scrollDirection === 'down') {
                     section.classList.add('scroll-down');
                     section.classList.remove('scroll-up');
@@ -2255,39 +2261,39 @@ const sectionObserver = new IntersectionObserver((entries) => {
                     section.classList.remove('scroll-down');
                 }
                 
-                // Apply Samsung-style staggered animations to child elements
+                
                 animateChildElements(section, scrollDirection);
             }
         }
-        // Note: We don't remove classes when leaving - animations stay visible
+        
     });
 }, sectionObserverOptions);
 
-// Function to animate child elements with staggered delays - only once per section
+
 function animateChildElements(section, direction) {
     const animatableElements = section.querySelectorAll('.project-card, .skill-card, .stat, .contact-item, .about-text p, .hero-text > *, .section-title');
     
     animatableElements.forEach((element, index) => {
-        // Only animate if element hasn't been animated yet
+        
         if (!element.classList.contains('animate-in-up') && !element.classList.contains('animate-in-down')) {
-            // Add animation class with delay
+
             setTimeout(() => {
                 if (direction === 'down') {
                     element.classList.add('animate-in-up');
                 } else {
                     element.classList.add('animate-in-down');
                 }
-            }, index * 100); // Staggered delay
+            }, index * 100); 
         }
     });
 }
 
-// Observe all main sections
+
 document.querySelectorAll('section, .hero').forEach(section => {
     sectionObserver.observe(section);
 });
 
-// Enhanced element observer for individual items
+
 const elementObserverOptions = {
     threshold: 0.2,
     rootMargin: '0px 0px -20% 0px'
@@ -2301,18 +2307,18 @@ const elementObserver = new IntersectionObserver((entries) => {
     });
 }, elementObserverOptions);
 
-// Observe individual elements that need fade-in animation
+
 document.querySelectorAll('.project-card, .skill-card, .stat, .contact-item').forEach(el => {
     elementObserver.observe(el);
 });
 
-// Smooth scroll enhancement for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            // Add transitioning class to prevent animation conflicts
+            
             document.body.classList.add('smooth-scrolling');
             
             target.scrollIntoView({
@@ -2320,7 +2326,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 block: 'start'
             });
             
-            // Remove transitioning class after scroll completes
+            
             setTimeout(() => {
                 document.body.classList.remove('smooth-scrolling');
             }, 1000);
@@ -2328,7 +2334,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Parallax effect for hero section
+
 function updateParallax() {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
@@ -2348,11 +2354,10 @@ function updateParallax() {
     }
 }
 
-// Throttled parallax update
+
 const throttledParallax = throttle(updateParallax, 16);
 window.addEventListener('scroll', throttledParallax);
 
-// Reset animations function (optional - for development/testing)
 function resetAnimations() {
     animatedSections.clear();
     document.querySelectorAll('section, .hero').forEach(section => {
@@ -2363,11 +2368,10 @@ function resetAnimations() {
     });
 }
 
-// Initialize animations on page load
+
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
     
-    // Trigger initial animations for hero section only
     setTimeout(() => {
         const heroSection = document.querySelector('.hero');
         if (heroSection) {
@@ -2379,33 +2383,26 @@ window.addEventListener('load', () => {
         }
     }, 300);
     
-    // Initialize project cards after page load
     initializeProjectCards();
     
-    // Add mobile-specific optimizations
     if (window.innerWidth <= 768) {
-        // Disable complex animations on mobile for better performance
-        document.body.classList.add('mobile-optimized');
         
-        // Simplify project card animations on mobile
+        document.body.classList.add('mobile-optimized');
+
         const projectCards = document.querySelectorAll('.project-card');
         projectCards.forEach(card => {
             card.style.animation = 'none';
         });
         
-        // Optimize touch interactions
         document.body.classList.add('touch-device');
         
-        // Disable hover effects on touch devices
         const hoverElements = document.querySelectorAll('.project-card, .skill-card, .btn, .nav-link');
         hoverElements.forEach(element => {
             element.style.pointerEvents = 'auto';
         });
         
-        // Improve scrolling performance
         document.documentElement.style.scrollBehavior = 'smooth';
         
-        // Optimize for mobile Safari
         if (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome')) {
             document.body.classList.add('mobile-safari');
         }
@@ -2416,26 +2413,19 @@ window.addEventListener('load', () => {
     }
 });
 
-// Optional: Add this to window for debugging
-// window.resetAnimations = resetAnimations;
-
-// 3D tilt effect for project cards (desktop only)
 function initializeProjectCards() {
     const projectCards = document.querySelectorAll('.project-card');
     
     projectCards.forEach(card => {
-        // Remove existing event listeners
+        
         card.removeEventListener('mousemove', handleCardMouseMove);
         card.removeEventListener('mouseleave', handleCardMouseLeave);
-        
-        // Add new event listeners
         card.addEventListener('mousemove', handleCardMouseMove);
         card.addEventListener('mouseleave', handleCardMouseLeave);
     });
 }
 
 function handleCardMouseMove(e) {
-    // Only apply 3D effect on desktop
     if (window.innerWidth > 768) {
         const rect = e.currentTarget.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -2458,16 +2448,12 @@ function handleCardMouseLeave(e) {
     }
 }
 
-// Initialize project cards
 initializeProjectCards();
 
-// Ensure project cards are properly initialized after DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    // Small delay to ensure all elements are rendered
     setTimeout(() => {
         initializeProjectCards();
         
-        // Force a reflow to prevent any initial blinking
         const projectCards = document.querySelectorAll('.project-card');
         projectCards.forEach(card => {
             card.style.opacity = '1';
@@ -2476,14 +2462,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
 });
 
-// Skill card flip animation
 document.querySelectorAll('.skill-card').forEach(card => {
     card.addEventListener('click', () => {
         card.classList.toggle('flipped');
     });
 });
 
-// Smooth scrolling for all anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -2497,12 +2481,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add loading animation to page
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-// Add keyboard navigation support
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && projectModal.style.display === 'block') {
         projectModal.style.display = 'none';
@@ -2510,7 +2492,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Add focus management for accessibility
 document.querySelectorAll('.project-card').forEach(card => {
     card.setAttribute('tabindex', '0');
     card.addEventListener('keydown', (e) => {
@@ -2521,7 +2502,6 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// Add loading state for images
 document.querySelectorAll('img').forEach(img => {
     img.addEventListener('load', () => {
         img.classList.add('loaded');
@@ -2533,17 +2513,15 @@ document.querySelectorAll('img').forEach(img => {
 });
 
 console.log('🚀 Tudor-Cristian Sîngerean Portfolio Website Loaded Successfully!');
-console.log('📧 Contact: tudor.singerean@yahoo.com');
+console.log('📧 Contact: singerean.digital@gmail.com');
 console.log('🌐 GitHub: https://github.com/s1ng3');
 console.log('💼 LinkedIn: https://www.linkedin.com/in/tudor-cristian-singerean/');
 
-// Test GitHub URLs
 console.log('🔗 Testing GitHub URLs:');
 Object.keys(projectData).forEach(key => {
     console.log(`${key}: ${projectData[key].github}`);
 });
 
-// PWA Install Prompt
 let deferredPrompt;
 const installPrompt = document.getElementById('install-prompt');
 const installBtn = document.getElementById('install-btn');
@@ -2553,7 +2531,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
     
-    // Show install prompt after 3 seconds
     setTimeout(() => {
         if (deferredPrompt) {
             installPrompt.classList.add('show');
@@ -2575,7 +2552,7 @@ dismissBtn.addEventListener('click', () => {
     installPrompt.classList.remove('show');
 });
 
-// Offline/Online Detection
+
 const offlineIndicator = document.getElementById('offline-indicator');
 
 window.addEventListener('online', () => {
@@ -2588,7 +2565,6 @@ window.addEventListener('offline', () => {
     console.log('🔴 Gone offline');
 });
 
-// Loading Screen
 const loading = document.getElementById('loading');
 
 window.addEventListener('load', () => {
@@ -2600,7 +2576,6 @@ window.addEventListener('load', () => {
     }, 1000);
 });
 
-// Enhanced Intersection Observer for new sections
 const timelineItems = document.querySelectorAll('.timeline-item');
 const educationCards = document.querySelectorAll('.education-card');
 
@@ -2617,11 +2592,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe timeline items and education cards
 timelineItems.forEach(item => observer.observe(item));
 educationCards.forEach(card => observer.observe(card));
 
-// Enhanced section animations
 const sections = document.querySelectorAll('section');
 const enhancedSectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -2636,7 +2609,6 @@ const enhancedSectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(section => enhancedSectionObserver.observe(section));
 
-// PWA Update Notification
 let newWorker;
 
 if ('serviceWorker' in navigator) {
@@ -2647,9 +2619,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// Enhanced keyboard navigation
 document.addEventListener('keydown', (e) => {
-    // Escape key closes modals
     if (e.key === 'Escape') {
         if (projectModal.style.display === 'block') {
             closeModal();
@@ -2662,7 +2632,6 @@ document.addEventListener('keydown', (e) => {
         }
     }
     
-    // Arrow keys for navigation
     if (e.key === 'ArrowUp' && e.ctrlKey) {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -2674,7 +2643,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Performance monitoring
 if ('performance' in window) {
     window.addEventListener('load', () => {
         setTimeout(() => {

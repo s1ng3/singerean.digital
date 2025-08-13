@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="emailjs-config.js"></script>
 </head>
 <body>
     <nav class="navbar" id="navbar">
@@ -265,7 +267,7 @@
                             <h3 data-translate="research-paper-title">Development of a Comprehensive Process Management and Optimization System Using the Windows API</h3>
                             <p class="research-date" data-translate="research-date">2025</p>
                             <p class="research-institution" data-translate="research-institution">Technical University of Cluj-Napoca</p>
-                            <p class="research-authors" data-translate="research-authors">Tudor-Cristian Sîngerean, Bogdan Gabriel Draghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea</p>
+                            <p class="research-authors" data-translate="research-authors">Tudor-Cristian Sîngerean, Bogdan Gabriel Drăghici, Alexandra Elena Dobre, Ovidiu Petru Stan, Liviu Cristian Miclea</p>
                             <p class="research-type" data-translate="research-type">Research Paper</p>
                         </div>
                     </div>
@@ -525,7 +527,7 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span data-translate="contact-email">tudor.singerean@yahoo.com</span>
+                            <span data-translate="contact-email">singerean.digital@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -565,7 +567,7 @@
                         <label for="subject" data-translate="form-subject-label">Subject</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea>
                         <label for="message" data-translate="form-message-label">Message</label>
                     </div>
                     <button type="submit" class="btn btn-primary" data-translate="form-submit">Send Message</button>

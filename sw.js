@@ -15,7 +15,6 @@ const urlsToCache = [
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];
 
-// Install event - cache resources
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -29,26 +28,21 @@ self.addEventListener('install', event => {
   );
 });
 
-// Fetch event - serve from cache if available
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
       .then(response => {
-        // Return cached version or fetch from network
         if (response) {
           return response;
         }
         
-        // Clone the request because it's a stream
         const fetchRequest = event.request.clone();
         
         return fetch(fetchRequest).then(response => {
-          // Check if we received a valid response
           if (!response || response.status !== 200 || response.type !== 'basic') {
             return response;
           }
           
-          // Clone the response because it's a stream
           const responseToCache = response.clone();
           
           caches.open(CACHE_NAME)
@@ -60,7 +54,6 @@ self.addEventListener('fetch', event => {
         });
       })
       .catch(() => {
-        // If both cache and network fail, show offline page
         if (event.request.destination === 'document') {
           return caches.match('/index.html');
         }
@@ -68,7 +61,6 @@ self.addEventListener('fetch', event => {
   );
 });
 
-// Activate event - clean up old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -84,7 +76,6 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Background sync for offline form submissions
 self.addEventListener('sync', event => {
   if (event.tag === 'background-sync') {
     event.waitUntil(doBackgroundSync());
@@ -92,11 +83,9 @@ self.addEventListener('sync', event => {
 });
 
 function doBackgroundSync() {
-  // Handle offline form submissions or other background tasks
   console.log('Background sync triggered');
 }
 
-// Push notification handling
 self.addEventListener('push', event => {
   const options = {
     body: event.data ? event.data.text() : 'New update available!',
@@ -126,7 +115,6 @@ self.addEventListener('push', event => {
   );
 });
 
-// Notification click handling
 self.addEventListener('notificationclick', event => {
   event.notification.close();
 
@@ -137,7 +125,6 @@ self.addEventListener('notificationclick', event => {
   }
 });
 
-// Message handling for communication with main thread
 self.addEventListener('message', event => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
