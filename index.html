@@ -32,6 +32,7 @@
                 <a href="#research" class="nav-link" data-translate="nav-research">Research</a>
                 <a href="#projects" class="nav-link" data-translate="nav-projects">Projects</a>
                 <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
+                <a href="#" class="nav-link" id="blog-nav-link" data-translate="nav-blog">Blog</a>
                 <a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
@@ -389,6 +390,41 @@
             </div>
         </div>
     </section>
+
+    
+    <div id="blog-window" class="blog-window" style="display: none;">
+        <div class="blog-window-header">
+            <div class="blog-window-nav">
+                <button class="blog-close-btn" id="blog-close-btn" aria-label="Close blog window">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h2 class="blog-window-title" data-translate="blog-title">Blog</h2>
+            </div>
+        </div>
+        
+        
+        <div id="blog-list-view" class="blog-list-view-container">
+            <div class="blog-list-content">
+                <div class="blog-posts-grid" id="blog-posts-grid">
+                    <p class="no-posts" data-translate="blog-no-posts">No blog posts yet.</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="blog-post-view" class="blog-post-view-container" style="display: none;">
+            <div class="blog-post-container">
+                <button class="blog-back-btn" id="blog-back-btn" aria-label="Back to blog list">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-translate="blog-back">Back to Homepage</span>
+                </button>
+                <div class="blog-post-content" id="blog-post-content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <section id="skills" class="skills">
         <div class="container">

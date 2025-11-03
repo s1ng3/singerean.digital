@@ -11,6 +11,7 @@ const translations = {
         'nav-research': 'Research',
         'nav-projects': 'Projects',
         'nav-skills': 'Skills',
+        'nav-blog': 'Blog',
         'nav-contact': 'Contact',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': 'Cybersecurity Engineering Master\'s Student',
@@ -167,7 +168,28 @@ const translations = {
         'project-modal-view-live': 'View Live',
         'project-modal-view-code': 'View Code',
         'project-modal-technologies-title': 'Technologies Used:',
-        'project-modal-view-github': 'View on GitHub'
+        'project-modal-view-github': 'View on GitHub',
+        
+        'blog-title': 'Blog',
+        'blog-upload-title': 'Upload a Report',
+        'blog-upload-description': 'Share your research reports, papers, or documentation',
+        'blog-report-title-label': 'Report Title',
+        'blog-report-description-label': 'Description',
+        'blog-select-file': 'Choose File',
+        'blog-no-file': 'No file chosen',
+        'blog-upload-button': 'Upload Post',
+        'blog-posts-title': 'Blog Posts',
+        'blog-no-posts': 'No blog posts yet.',
+        'blog-upload-success': 'Blog post uploaded successfully!',
+        'blog-upload-error': 'Error uploading blog post. Please try again.',
+        'blog-file-size-error': 'File size exceeds 5MB limit',
+        'blog-back': 'Back to Homepage',
+        'blog-read-more': 'Read More',
+        'blog-admin-title': 'Admin: Upload Blog Post',
+        'blog-post-title-label': 'Post Title',
+        'blog-post-excerpt-label': 'Excerpt (Short Description)',
+        'blog-post-date-label': 'Date',
+        'blog-select-html': 'Choose HTML File'
     },
     ro: {
         'nav-home': 'Acasă',
@@ -177,6 +199,7 @@ const translations = {
         'nav-research': 'Cercetare',
         'nav-projects': 'Proiecte',
         'nav-skills': 'Competențe',
+        'nav-blog': 'Blog',
         'nav-contact': 'Contact',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': 'Student Masterat Inginerie Securitate Cibernetică',
@@ -345,7 +368,24 @@ const translations = {
         'skill-blender': 'Blender',
         'skill-blender-description': 'Modelare 3D și vizualizare',
         'skill-unity': 'Unity',
-        'skill-unity-description': 'Dezvoltare de jocuri și aplicații 3D'
+        'skill-unity-description': 'Dezvoltare de jocuri și aplicații 3D',
+        
+        'blog-title': 'Blog',
+        'blog-upload-title': 'Încarcă un Raport',
+        'blog-upload-description': 'Distribuie rapoartele tale de cercetare, lucrări sau documentație',
+        'blog-report-title-label': 'Titlu Raport',
+        'blog-report-description-label': 'Descriere',
+        'blog-select-file': 'Alege Fișier',
+        'blog-no-file': 'Niciun fișier selectat',
+        'blog-upload-button': 'Încarcă Raport',
+        'blog-posts-title': 'Rapoarte',
+        'blog-no-posts': 'Nu au fost încărcate rapoarte. Încarcă primul raport mai sus!',
+        'blog-view-report': 'Vezi Raport',
+        'blog-download-report': 'Descarcă',
+        'blog-delete-report': 'Șterge',
+        'blog-upload-success': 'Raportul a fost încărcat cu succes!',
+        'blog-upload-error': 'Eroare la încărcarea raportului. Vă rugăm să încercați din nou.',
+        'blog-file-size-error': 'Dimensiunea fișierului depășește limita de 10MB'
     },
     de: {
         'nav-home': 'Startseite',
@@ -355,6 +395,7 @@ const translations = {
         'nav-research': 'Forschung',
         'nav-projects': 'Projekte',
         'nav-skills': 'Fähigkeiten',
+        'nav-blog': 'Blog',
         'nav-contact': 'Kontakt',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': 'Masterstudent für Cybersicherheitstechnik',
@@ -522,7 +563,24 @@ const translations = {
         'skill-blender': 'Blender',
         'skill-blender-description': '3D-Modellierung und Visualisierung',
         'skill-unity': 'Unity',
-        'skill-unity-description': 'Spieleentwicklung und 3D-Anwendungen'
+        'skill-unity-description': 'Spieleentwicklung und 3D-Anwendungen',
+        
+        'blog-title': 'Blog',
+        'blog-upload-title': 'Bericht hochladen',
+        'blog-upload-description': 'Teilen Sie Ihre Forschungsberichte, Artikel oder Dokumentation',
+        'blog-report-title-label': 'Berichtstitel',
+        'blog-report-description-label': 'Beschreibung',
+        'blog-select-file': 'Datei auswählen',
+        'blog-no-file': 'Keine Datei ausgewählt',
+        'blog-upload-button': 'Bericht hochladen',
+        'blog-posts-title': 'Berichte',
+        'blog-no-posts': 'Noch keine Berichte hochgeladen. Laden Sie Ihren ersten Bericht oben hoch!',
+        'blog-view-report': 'Bericht anzeigen',
+        'blog-download-report': 'Herunterladen',
+        'blog-delete-report': 'Löschen',
+        'blog-upload-success': 'Bericht erfolgreich hochgeladen!',
+        'blog-upload-error': 'Fehler beim Hochladen des Berichts. Bitte versuchen Sie es erneut.',
+        'blog-file-size-error': 'Dateigröße überschreitet das 10MB-Limit'
     },
     fr: {
         'nav-home': 'Accueil',
@@ -532,6 +590,7 @@ const translations = {
         'nav-research': 'Recherche',
         'nav-projects': 'Projets',
         'nav-skills': 'Compétences',
+        'nav-blog': 'Blog',
         'nav-contact': 'Contact',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': 'Étudiant en Master d\'Ingénierie Cybersécurité',
@@ -699,7 +758,24 @@ const translations = {
         'skill-blender': 'Blender',
         'skill-blender-description': 'Modélisation 3D et visualisation',
         'skill-unity': 'Unity',
-        'skill-unity-description': 'Développement de jeux et applications 3D'
+        'skill-unity-description': 'Développement de jeux et applications 3D',
+        
+        'blog-title': 'Blog',
+        'blog-upload-title': 'Télécharger un rapport',
+        'blog-upload-description': 'Partagez vos rapports de recherche, articles ou documentation',
+        'blog-report-title-label': 'Titre du rapport',
+        'blog-report-description-label': 'Description',
+        'blog-select-file': 'Choisir un fichier',
+        'blog-no-file': 'Aucun fichier choisi',
+        'blog-upload-button': 'Télécharger le rapport',
+        'blog-posts-title': 'Rapports',
+        'blog-no-posts': 'Aucun rapport téléchargé. Téléchargez votre premier rapport ci-dessus!',
+        'blog-view-report': 'Voir le rapport',
+        'blog-download-report': 'Télécharger',
+        'blog-delete-report': 'Supprimer',
+        'blog-upload-success': 'Rapport téléchargé avec succès!',
+        'blog-upload-error': 'Erreur lors du téléchargement du rapport. Veuillez réessayer.',
+        'blog-file-size-error': 'La taille du fichier dépasse la limite de 10MB'
     },
     es: {
         'nav-home': 'Inicio',
@@ -709,6 +785,7 @@ const translations = {
         'nav-research': 'Investigación',
         'nav-projects': 'Proyectos',
         'nav-skills': 'Habilidades',
+        'nav-blog': 'Blog',
         'nav-contact': 'Contacto',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': 'Estudiante de Maestría en Ingeniería de Ciberseguridad',
@@ -876,7 +953,24 @@ const translations = {
         'skill-blender': 'Blender',
         'skill-blender-description': 'Modelado 3D y visualización',
         'skill-unity': 'Unity',
-        'skill-unity-description': 'Desarrollo de juegos y aplicaciones 3D'
+        'skill-unity-description': 'Desarrollo de juegos y aplicaciones 3D',
+        
+        'blog-title': 'Blog',
+        'blog-upload-title': 'Subir un informe',
+        'blog-upload-description': 'Comparte tus informes de investigación, artículos o documentación',
+        'blog-report-title-label': 'Título del informe',
+        'blog-report-description-label': 'Descripción',
+        'blog-select-file': 'Elegir archivo',
+        'blog-no-file': 'Ningún archivo elegido',
+        'blog-upload-button': 'Subir informe',
+        'blog-posts-title': 'Informes',
+        'blog-no-posts': 'Aún no se han subido informes. ¡Sube tu primer informe arriba!',
+        'blog-view-report': 'Ver informe',
+        'blog-download-report': 'Descargar',
+        'blog-delete-report': 'Eliminar',
+        'blog-upload-success': '¡Informe subido con éxito!',
+        'blog-upload-error': 'Error al subir el informe. Por favor, inténtalo de nuevo.',
+        'blog-file-size-error': 'El tamaño del archivo supera el límite de 10MB'
     },
     it: {
         'nav-home': 'Home',
@@ -886,6 +980,7 @@ const translations = {
         'nav-research': 'Ricerca',
         'nav-projects': 'Progetti',
         'nav-skills': 'Competenze',
+        'nav-blog': 'Blog',
         'nav-contact': 'Contatto',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': 'Studente Magistrale in Ingegneria della Sicurezza Informatica',
@@ -1053,7 +1148,24 @@ const translations = {
         'skill-blender': 'Blender',
         'skill-blender-description': 'Modellazione 3D e visualizzazione',
         'skill-unity': 'Unity',
-        'skill-unity-description': 'Sviluppo di giochi e applicazioni 3D'
+        'skill-unity-description': 'Sviluppo di giochi e applicazioni 3D',
+        
+        'blog-title': 'Blog',
+        'blog-upload-title': 'Carica un rapporto',
+        'blog-upload-description': 'Condividi i tuoi rapporti di ricerca, articoli o documentazione',
+        'blog-report-title-label': 'Titolo del rapporto',
+        'blog-report-description-label': 'Descrizione',
+        'blog-select-file': 'Scegli file',
+        'blog-no-file': 'Nessun file selezionato',
+        'blog-upload-button': 'Carica rapporto',
+        'blog-posts-title': 'Rapporti',
+        'blog-no-posts': 'Nessun rapporto caricato ancora. Carica il tuo primo rapporto sopra!',
+        'blog-view-report': 'Visualizza rapporto',
+        'blog-download-report': 'Scarica',
+        'blog-delete-report': 'Elimina',
+        'blog-upload-success': 'Rapporto caricato con successo!',
+        'blog-upload-error': 'Errore nel caricamento del rapporto. Riprova.',
+        'blog-file-size-error': 'La dimensione del file supera il limite di 10MB'
     },
     ja: {
         'nav-home': 'ホーム',
@@ -1063,6 +1175,7 @@ const translations = {
         'nav-research': '研究',
         'nav-projects': 'プロジェクト',
         'nav-skills': 'スキル',
+        'nav-blog': 'ブログ',
         'nav-contact': 'お問い合わせ',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': 'サイバーセキュリティ工学修士課程学生',
@@ -1230,7 +1343,24 @@ const translations = {
         'skill-blender': 'Blender',
         'skill-blender-description': '3Dモデリングとビジュアライゼーション',
         'skill-unity': 'Unity',
-        'skill-unity-description': 'ゲーム開発と3Dアプリケーション'
+        'skill-unity-description': 'ゲーム開発と3Dアプリケーション',
+        
+        'blog-title': 'ブログ',
+        'blog-upload-title': 'レポートをアップロード',
+        'blog-upload-description': '研究レポート、論文、または文書を共有',
+        'blog-report-title-label': 'レポートタイトル',
+        'blog-report-description-label': '説明',
+        'blog-select-file': 'ファイルを選択',
+        'blog-no-file': 'ファイルが選択されていません',
+        'blog-upload-button': 'レポートをアップロード',
+        'blog-posts-title': 'レポート',
+        'blog-no-posts': 'まだレポートがアップロードされていません。上記から最初のレポートをアップロードしてください！',
+        'blog-view-report': 'レポートを表示',
+        'blog-download-report': 'ダウンロード',
+        'blog-delete-report': '削除',
+        'blog-upload-success': 'レポートが正常にアップロードされました！',
+        'blog-upload-error': 'レポートのアップロード中にエラーが発生しました。もう一度お試しください。',
+        'blog-file-size-error': 'ファイルサイズが10MBの制限を超えています'
     },
     zh: {
         'nav-home': '首页',
@@ -1240,6 +1370,7 @@ const translations = {
         'nav-research': '研究',
         'nav-projects': '项目',
         'nav-skills': '技能',
+        'nav-blog': '博客',
         'nav-contact': '联系',
         'hero-title': 'Tudor-Cristian Sîngerean',
         'hero-subtitle': '网络安全工程硕士学生',
@@ -1407,7 +1538,24 @@ const translations = {
         'skill-blender': 'Blender',
         'skill-blender-description': '3D建模和可视化',
         'skill-unity': 'Unity',
-        'skill-unity-description': '游戏开发和3D应用程序'
+        'skill-unity-description': '游戏开发和3D应用程序',
+        
+        'blog-title': '博客',
+        'blog-upload-title': '上传报告',
+        'blog-upload-description': '分享您的研究报告、论文或文档',
+        'blog-report-title-label': '报告标题',
+        'blog-report-description-label': '描述',
+        'blog-select-file': '选择文件',
+        'blog-no-file': '未选择文件',
+        'blog-upload-button': '上传报告',
+        'blog-posts-title': '报告',
+        'blog-no-posts': '还没有上传报告。在上方上传您的第一个报告！',
+        'blog-view-report': '查看报告',
+        'blog-download-report': '下载',
+        'blog-delete-report': '删除',
+        'blog-upload-success': '报告上传成功！',
+        'blog-upload-error': '上传报告时出错。请重试。',
+        'blog-file-size-error': '文件大小超过10MB限制'
     }
 };
 
@@ -1514,18 +1662,45 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 if ('serviceWorker' in navigator) {
+  let hasRefreshed = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hasRefreshed) return;
+    hasRefreshed = true;
+    window.location.reload();
+  });
+
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
-      .then(registration => {
-        console.log('SW registered: ', registration);
+      .then(reg => {
+        
+        reg.update().catch(() => {});
+        setInterval(() => reg.update().catch(() => {}), 60 * 60 * 1000);
+
+        
+        if (reg.installing) {
+          reg.installing.addEventListener('statechange', () => {
+            if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+          });
+        }
+        reg.addEventListener('updatefound', () => {
+          const sw = reg.installing;
+          if (!sw) return;
+          sw.addEventListener('statechange', () => {
+            if (sw.state === 'installed' && reg.waiting) {
+              reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+            }
+          });
+        });
       })
-      .catch(registrationError => {
-        console.log('SW registration failed: ', registrationError);
+      .catch(err => {
+        console.log('SW registration failed: ', err);
       });
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  
+  try { ensureContentVersion(); } catch(_) {}
   document.body.classList.add('page-transition');
   
   document.querySelectorAll('.stat').forEach(stat => {
@@ -1737,7 +1912,7 @@ const handleScroll = throttle(() => {
     if (hero && particles) {
         particles.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
-}, 16); // ~60fps
+}, 16); 
 
 window.addEventListener('scroll', handleScroll);
 
@@ -2442,7 +2617,7 @@ function handleCardMouseMove(e) {
 }
 
 function handleCardMouseLeave(e) {
-    // Only apply 3D effect on desktop
+    
     if (window.innerWidth > 768) {
         e.currentTarget.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
     }
@@ -2655,3 +2830,457 @@ if ('performance' in window) {
         }, 0);
     });
 } 
+
+
+const CONTENT_VERSION = '2025-11-03-2';
+const blogWindow = document.getElementById('blog-window');
+const blogPostsGrid = document.getElementById('blog-posts-grid');
+const blogListView = document.getElementById('blog-list-view');
+const blogPostView = document.getElementById('blog-post-view');
+const blogPostContent = document.getElementById('blog-post-content');
+const blogBackBtn = document.getElementById('blog-back-btn');
+const blogCloseBtn = document.getElementById('blog-close-btn');
+const blogNavLink = document.getElementById('blog-nav-link');
+let blogOverlayClickBound = false;
+
+function ensureContentVersion() {
+    try {
+        const stored = localStorage.getItem('contentVersion');
+        if (stored !== CONTENT_VERSION) {
+            localStorage.removeItem('blogPosts');
+            localStorage.setItem('contentVersion', CONTENT_VERSION);
+        }
+    } catch (_) {}
+}
+
+
+function openBlogWindow() {
+    if (blogWindow) {
+        blogWindow.style.display = 'block';
+        document.body.style.overflow = 'hidden'; 
+        loadBlogPosts();
+        attachRefreshContentButton();
+        
+        blogWindow.classList.remove('blog-header-auto-hide-active');
+        const hint = blogWindow.querySelector('.blog-top-hint');
+        if (hint) hint.remove();
+
+        
+        if (!blogOverlayClickBound) {
+            blogOverlayClickBound = true;
+            blogWindow.addEventListener('click', (ev) => {
+                if (!blogListView || blogListView.style.display === 'none') return;
+                const inList = ev.target.closest('.blog-list-view-container');
+                const inHeader = ev.target.closest('.blog-window-header');
+                if (!inList && !inHeader) {
+                    closeBlogWindow();
+                }
+            });
+        }
+    }
+}
+
+
+function closeBlogWindow() {
+    if (blogWindow) {
+        blogWindow.style.display = 'none';
+        document.body.style.overflow = ''; 
+        
+        if (blogListView) blogListView.style.display = 'block';
+        if (blogPostView) blogPostView.style.display = 'none';
+        blogWindow.classList.remove('blog-header-auto-hide-active');
+        const fabPrev = blogWindow.querySelector('.deck-fab-prev');
+        const fabNext = blogWindow.querySelector('.deck-fab-next');
+        if (fabPrev) fabPrev.remove();
+        if (fabNext) fabNext.remove();
+    }
+}
+
+
+if (blogNavLink) {
+    blogNavLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        openBlogWindow();
+    });
+}
+
+
+if (blogCloseBtn) {
+    blogCloseBtn.addEventListener('click', () => {
+        closeBlogWindow();
+    });
+}
+
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && blogWindow && blogWindow.style.display === 'block') {
+        closeBlogWindow();
+    }
+});
+
+
+function loadBlogPosts() {
+    const posts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
+    displayBlogPosts(posts);
+    return posts;
+}
+
+
+function saveBlogPosts(posts) {
+    localStorage.setItem('blogPosts', JSON.stringify(posts));
+}
+
+
+function displayBlogPosts(posts) {
+    if (!blogPostsGrid) return;
+    
+    if (posts.length === 0) {
+        blogPostsGrid.innerHTML = '<p class="no-posts" data-translate="blog-no-posts">No blog posts yet.</p>';
+        return;
+    }
+    
+    
+    const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    const mgmTitleShort = 'The 2023 MGM Resorts Cybersecurity Breach';
+    blogPostsGrid.innerHTML = sortedPosts.map((post) => {
+        if (post.title === mgmTitleShort) {
+            return `
+            <article class="blog-post-preview mgm-intro" data-post-id="${post.id}">
+                <div class="blog-post-preview-header">
+                    <h3 class="blog-post-preview-title">${escapeHtml(post.title)}</h3>
+                    <div class="mgm-issued">Issued at: ${new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+                </div>
+                <div class="blog-post-preview-excerpt">
+                    <p>${escapeHtml(post.excerpt)}</p>
+                </div>
+                <div class="mgm-meta-row">
+                    <span class="mgm-meta-left">Created at: November 03, 2025</span>
+                    <span class="mgm-meta-right">Tudor-Cristian Sîngerean, Daiana Horvath</span>
+                </div>
+                <button class="btn btn-primary read-more-btn" data-post-id="${post.id}" data-translate="blog-read-more">Read More</button>
+            </article>`;
+        }
+        return `
+        <article class="blog-post-preview" data-post-id="${post.id}">
+            <div class="blog-post-preview-header">
+                <h3 class="blog-post-preview-title">${escapeHtml(post.title)}</h3>
+                <time class="blog-post-preview-date" datetime="${post.date}">
+                    <i class="fas fa-calendar"></i> ${new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </time>
+            </div>
+            <div class="blog-post-preview-excerpt">
+                <p>${escapeHtml(post.excerpt)}</p>
+            </div>
+            <button class="btn btn-primary read-more-btn" data-post-id="${post.id}" data-translate="blog-read-more">Read More</button>
+        </article>`;
+    }).join('');
+    
+    
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const postId = parseInt(e.target.getAttribute('data-post-id'));
+            const post = posts.find(p => p.id === postId);
+            if (post) {
+                viewBlogPost(post);
+            }
+        });
+    });
+    
+    document.querySelectorAll('.blog-post-preview.mgm-intro').forEach(card => {
+        card.addEventListener('click', () => {
+            const postId = parseInt(card.getAttribute('data-post-id'));
+            const post = posts.find(p => p.id === postId);
+            if (post) viewBlogPost(post);
+        });
+    });
+}
+
+
+function viewBlogPost(post) {
+    if (!blogPostView || !blogPostContent || !blogListView) return;
+    
+    
+    blogListView.style.display = 'none';
+    blogPostView.style.display = 'block';
+    
+    
+    const mgmPostTitle = 'The 2023 MGM Resorts Cybersecurity Breach';
+    if (post.title === mgmPostTitle) {
+        renderMGMDeck(post);
+    } else if (post.fileName) {
+        
+        blogPostContent.innerHTML = `
+            <iframe
+                src="${post.fileName}"
+                class="blog-post-iframe"
+                title="${escapeHtml(post.title)}"
+                loading="lazy"
+            ></iframe>
+        `;
+    } else {
+        
+        let htmlContent = post.htmlContent || '';
+        
+        
+        
+        const bodyMatch = htmlContent.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+        if (bodyMatch) {
+            htmlContent = bodyMatch[1];
+        } else {
+            
+            htmlContent = htmlContent.replace(/<html[^>]*>/gi, '').replace(/<\/html>/gi, '');
+            htmlContent = htmlContent.replace(/<head[^>]*>[\s\S]*?<\/head>/gi, '');
+            htmlContent = htmlContent.replace(/<body[^>]*>/gi, '').replace(/<\/body>/gi, '');
+        }
+        
+        blogPostContent.innerHTML = htmlContent;
+    }
+    
+    
+    blogWindow.scrollTop = 0;
+    
+    
+    window.history.pushState({}, '', `#blog-post-${post.id}`);
+}
+
+
+if (blogBackBtn) {
+    blogBackBtn.addEventListener('click', () => {
+        if (blogPostView) blogPostView.style.display = 'none';
+        if (blogListView) blogListView.style.display = 'block';
+        
+        const fabPrev = blogWindow.querySelector('.deck-fab-prev');
+        const fabNext = blogWindow.querySelector('.deck-fab-next');
+        if (fabPrev) fabPrev.remove();
+        if (fabNext) fabNext.remove();
+        
+        
+        if (blogWindow) blogWindow.scrollTop = 0;
+        
+        window.history.pushState({}, '', '#blog');
+    });
+}
+
+
+
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+
+window.addEventListener('hashchange', () => {
+    const hash = window.location.hash;
+    if (hash.startsWith('#blog-post-')) {
+        const postId = parseInt(hash.replace('#blog-post-', ''));
+        const posts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
+        const post = posts.find(p => p.id === postId);
+        if (post) {
+            openBlogWindow();
+            setTimeout(() => viewBlogPost(post), 100);
+        }
+    } else if (hash === '#blog') {
+        openBlogWindow();
+    }
+});
+
+
+async function initializeMGMPresentation() {
+    try {
+        const posts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
+        const mgmPostTitle = 'The 2023 MGM Resorts Cybersecurity Breach';
+        
+        
+        const existingPost = posts.find(p => p.title === mgmPostTitle);
+        if (existingPost) {
+            return; 
+        }
+        
+        
+        const response = await fetch('mgm_cybersecurity_breach_presentation.html');
+        if (!response.ok) {
+            console.warn('Could not load MGM presentation file. It may need to be uploaded manually.');
+            return;
+        }
+        
+        const htmlContent = await response.text();
+        
+        
+        const mgmPost = {
+            id: Date.now(),
+            title: mgmPostTitle,
+            excerpt: 'A comprehensive analysis of the MGM Resorts cybersecurity incident, comparing response strategies and providing actionable recommendations for organizational resilience.',
+            date: '2023-09-15', 
+            htmlContent: htmlContent,
+            fileName: 'mgm_cybersecurity_breach_presentation.html'
+        };
+        
+        posts.unshift(mgmPost); 
+        saveBlogPosts(posts);
+        loadBlogPosts();
+    } catch (error) {
+        console.warn('Error initializing MGM presentation:', error);
+        
+    }
+}
+
+
+function attachRefreshContentButton() {
+    const header = document.querySelector('.blog-window-nav');
+    if (!header) return;
+    if (header.querySelector('#blog-refresh-btn')) return;
+    const btn = document.createElement('button');
+    btn.id = 'blog-refresh-btn';
+    btn.className = 'btn btn-secondary';
+    btn.textContent = 'Refresh Content';
+    btn.addEventListener('click', async () => {
+        try {
+            
+            localStorage.removeItem('blogPosts');
+            localStorage.setItem('contentVersion', CONTENT_VERSION);
+            
+            if ('caches' in window) {
+                const names = await caches.keys();
+                await Promise.all(names.map(n => caches.delete(n)));
+            }
+            
+            if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+                navigator.serviceWorker.controller.postMessage({ type: 'SKIP_WAITING' });
+            }
+        } catch (_) {}
+        
+        initializeMGMPresentation();
+        loadBlogPosts();
+    });
+    
+    
+}
+
+
+function setupBlogHeaderHover() {
+    if (!blogWindow) return;
+    if (!blogWindow.querySelector('.blog-header-hover-zone')) {
+        const zone = document.createElement('div');
+        zone.className = 'blog-header-hover-zone';
+        blogWindow.appendChild(zone);
+    }
+    if (!blogWindow.querySelector('.blog-top-hint')) {
+        const hint = document.createElement('div');
+        hint.className = 'blog-top-hint';
+        hint.textContent = 'Move mouse to top to show controls';
+        blogWindow.appendChild(hint);
+    }
+}
+
+
+function renderMGMDeck(post) {
+    
+    let html = post.htmlContent || '';
+    const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+    if (bodyMatch) html = bodyMatch[1];
+    
+    const temp = document.createElement('div');
+    temp.innerHTML = html;
+    const rawSlides = Array.from(temp.querySelectorAll('.slide'));
+    const slides = rawSlides.length > 0 ? rawSlides.map(s => s.innerHTML) : [html];
+
+    let currentIndex = 0;
+    let keyHandlerAttached = false;
+
+    const render = () => {
+        const progressPercent = Math.round(((currentIndex + 1) / slides.length) * 100);
+        
+        ensureDeckFabs();
+
+        const isFirst = currentIndex === 0;
+        blogPostContent.innerHTML = `
+            <div class="blog-deck">
+                <div class="blog-card deck-slide ${isFirst ? 'is-first' : ''}">
+                    ${slides[currentIndex]}
+                    <div class="blog-deck-controls">
+                        <button class="btn btn-secondary deck-prev" ${currentIndex === 0 ? 'disabled' : ''}>Previous</button>
+                        <div class="deck-progress"><div class="deck-progress-bar" style="width:${progressPercent}%"></div></div>
+                        <button class="btn btn-primary deck-next" ${currentIndex === slides.length - 1 ? 'disabled' : ''}>Next</button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const prev = blogPostContent.querySelector('.deck-prev');
+        const next = blogPostContent.querySelector('.deck-next');
+        const goPrev = (e) => { if (e) e.preventDefault(); if (currentIndex > 0) { currentIndex -= 1; render(); } };
+        const goNext = (e) => { if (e) e.preventDefault(); if (currentIndex < slides.length - 1) { currentIndex += 1; render(); } };
+        if (prev) prev.addEventListener('click', goPrev);
+        if (next) next.addEventListener('click', goNext);
+
+        
+        const fabPrev = blogWindow.querySelector('.deck-fab-prev') || (()=>{ ensureDeckFabs(); return blogWindow.querySelector('.deck-fab-prev'); })();
+        const fabNext = blogWindow.querySelector('.deck-fab-next') || (()=>{ ensureDeckFabs(); return blogWindow.querySelector('.deck-fab-next'); })();
+        if (fabPrev) fabPrev.onclick = goPrev;
+        if (fabNext) fabNext.onclick = goNext;
+        
+        if (!keyHandlerAttached) {
+            keyHandlerAttached = true;
+            const handler = (ev) => {
+                if (!blogWindow || blogWindow.style.display !== 'block') return;
+                if (ev.key === 'ArrowRight' || ev.key === 'PageDown') {
+                    if (currentIndex < slides.length - 1) { currentIndex += 1; render(); }
+                } else if (ev.key === 'ArrowLeft' || ev.key === 'PageUp') {
+                    if (currentIndex > 0) { currentIndex -= 1; render(); }
+                }
+            };
+            window.addEventListener('keydown', handler, { passive: true });
+        }
+        
+        blogWindow.scrollTop = 0;
+        
+        if (fabPrev) fabPrev.style.display = 'flex';
+        if (fabNext) fabNext.style.display = 'flex';
+    };
+
+    render();
+}
+
+function ensureDeckFabs() {
+    if (!blogWindow) return;
+    if (!blogWindow.querySelector('.deck-fab-prev')) {
+        const prev = document.createElement('button');
+        prev.className = 'deck-fab deck-fab-prev';
+        prev.setAttribute('aria-label', 'Previous slide');
+        prev.innerHTML = '<i class="fas fa-chevron-left"></i>';
+        blogWindow.appendChild(prev);
+    }
+    if (!blogWindow.querySelector('.deck-fab-next')) {
+        const next = document.createElement('button');
+        next.className = 'deck-fab deck-fab-next';
+        next.setAttribute('aria-label', 'Next slide');
+        next.innerHTML = '<i class="fas fa-chevron-right"></i>';
+        blogWindow.appendChild(next);
+    }
+}
+
+
+if (blogPostsGrid) {
+    ensureContentVersion();
+    loadBlogPosts();
+    
+    
+    initializeMGMPresentation();
+    
+    
+    const hash = window.location.hash;
+    if (hash.startsWith('#blog-post-')) {
+        const postId = parseInt(hash.replace('#blog-post-', ''));
+        const posts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
+        const post = posts.find(p => p.id === postId);
+        if (post) {
+            openBlogWindow();
+            setTimeout(() => viewBlogPost(post), 100);
+        }
+    } else if (hash === '#blog') {
+        openBlogWindow();
+    }
+}

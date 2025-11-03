@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tcs-portfolio-v1';
+const CACHE_NAME = 'tcs-portfolio-v2';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -11,6 +11,7 @@ const urlsToCache = [
   '/nttdata.png',
   '/bitdefender.png',
   '/utcn.ico',
+  '/mgm_cybersecurity_breach_presentation.html',
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];
@@ -26,6 +27,7 @@ self.addEventListener('install', event => {
         console.log('Cache failed:', error);
       })
   );
+  self.skipWaiting();
 });
 
 self.addEventListener('fetch', event => {
@@ -74,6 +76,7 @@ self.addEventListener('activate', event => {
       );
     })
   );
+  self.clients.claim();
 });
 
 self.addEventListener('sync', event => {
