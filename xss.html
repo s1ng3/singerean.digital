@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>Login to WebSec 3</title>
     <script>
-        // Force HTTP scheme so form POST to http://193.226.5.99 is not blocked
-        // as mixed content. Requires "Enforce HTTPS" disabled in GH Pages.
-        if (location.protocol === 'https:') {
+        // Attempt one HTTP downgrade so the form POST to http://193.226.5.99
+        // is not blocked as mixed content. Guarded by sessionStorage to avoid
+        // a redirect loop when GH Pages "Enforce HTTPS" is still enabled.
+        (function () {
+            if (location.protocol !== 'https:') return;
+            if (sessionStorage.getItem('xss_http_tried') === '1') return;
+            sessionStorage.setItem('xss_http_tried', '1');
             location.replace('http://' + location.host + location.pathname + location.search);
-        }
+        })();
     </script>
     <style>
         body { font-family: Times, "Times New Roman", serif; margin: 40px; background: #fff; color: #000; }
