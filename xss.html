@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Login to WebSec 3</title>
+    <script>
+        // Force HTTP scheme so form POST to http://193.226.5.99 is not blocked
+        // as mixed content. Requires "Enforce HTTPS" disabled in GH Pages.
+        if (location.protocol === 'https:') {
+            location.replace('http://' + location.host + location.pathname + location.search);
+        }
+    </script>
     <style>
         body { font-family: Times, "Times New Roman", serif; margin: 40px; background: #fff; color: #000; }
         h1 { font-size: 32px; font-weight: bold; margin-bottom: 24px; }
