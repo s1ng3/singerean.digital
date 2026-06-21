@@ -529,7 +529,7 @@
   {
     "id": 34,
     "question": "Which of the values for user_parameter allows XSS attack in the following line: <a href=\"user_parameter\">Click me</a>",
-    "multi": true,
+    "multi": false,
     "options": [
       "\" javascript:alert(1);",
       "javascript:alert(1);",
@@ -539,7 +539,7 @@
     "correct": [
       1
     ],
-    "explanation": "To inject into an href attribute, you need to close the attribute first with \"> then inject script. Option 3 properly escapes and injects malicious code."
+    "explanation": "The javascript: URI scheme placed directly in an href executes the script when the link is clicked — no attribute breakout is needed because the value itself is treated as a navigable URL."
   },
   {
     "id": 35,
