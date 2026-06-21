@@ -1,0 +1,764 @@
+[
+  {
+    "id": 1,
+    "question": "How do you define the World Wide Web?",
+    "multi": false,
+    "options": [
+      "a collection of all web applications implemented using HTML, accessible over HTTP through a web browser",
+      "an information system created over the Internet, which allows interconnection and cross-referencing of elements through hyperlinks",
+      "a global network of computers providing communication and information facilities, built by interconnecting local networks via standardized protocols",
+      "a set of communication protocols (e.g. HTTP) and encoding standards (e.g. HTML) that facilitate the implementation of web applications"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Web is an information system using hyperlinks over the Internet. Option 2 describes the Internet. The Web encompasses more than just protocols or HTML apps."
+  },
+  {
+    "id": 2,
+    "question": "Which one of the following correctly defines a Web Application?",
+    "multi": false,
+    "options": [
+      "the applications that can be run only inside a browser and can be accessed only over HTTP protocol",
+      "applications developed using the client-server conceptual architecture, and that communicate using TCP/IP",
+      "any application that downloads components or information from the Web over HTTP, each time it runs",
+      "the applications accessible over HTTP protocol that are also described in HTML language and include active components implemented in JavaScript"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Web applications follow client-server architecture and communicate over network protocols like TCP/IP, not limited to browser-only or HTTP-only scenarios."
+  },
+  {
+    "id": 3,
+    "question": "Which ones of the following are specific to Web 2.0, when compared to Web 1.0?",
+    "multi": true,
+    "options": [
+      "stateless - retains no state information",
+      "the content displayed in the browsers is dynamic",
+      "client-side code execution to create dynamic and more responsive User Interfaces",
+      "promotes the concept of Software as a Service (SaaS)",
+      "inclusion of semantic information in the content distributed over internet"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Web 2.0 features dynamic content, client-side JavaScript for rich UIs, and SaaS models. Statelessness exists in both. Semantic web is Web 3.0 concept."
+  },
+  {
+    "id": 4,
+    "question": "HyperText Markup Language is:",
+    "multi": true,
+    "options": [
+      "a markup language that defines two main sections: HEAD and BODY, which can be used only once in the same HTML document",
+      "the essential component for all web applications",
+      "a text-based description language that uses tags and attributes",
+      "a hierarchical structure having DOCTYPE as root element"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "HTML is a text-based markup language using tags and attributes to describe document structure. Not all web applications require HTML (e.g., APIs)."
+  },
+  {
+    "id": 5,
+    "question": "Define the term HEAD in the context of web applications:",
+    "multi": true,
+    "options": [
+      "an HTTP method",
+      "the section at the beginning of a resource that contains information about its type and structure",
+      "a tag in HTML description language",
+      "short name for the header of any HTTP message"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "HEAD is an HTTP method (like GET), an HTML document section (<head>), and colloquially refers to HTTP message headers. All three uses are valid."
+  },
+  {
+    "id": 6,
+    "question": "The layers of the TCP/IP conceptual model are:",
+    "multi": false,
+    "options": [
+      "application, session, transport, network",
+      "application, transport, connection, network",
+      "application, network, connection, physical layer",
+      "application, transport, internet, network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The TCP/IP model consists of 4 layers: Application, Transport, Internet, and Network Access (Network Interface)."
+  },
+  {
+    "id": 7,
+    "question": "The layers of the ISO-OSI conceptual model are:",
+    "multi": false,
+    "options": [
+      "application, encapsulation, security, transport, network, physical level",
+      "application, presentation, transport, security, network, connection, data link, physical level",
+      "application, presentation, session, transport, network, data link, physical level",
+      "interface, application, session, transport, network, data link, physical level"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The OSI model has 7 layers: Application, Presentation, Session, Transport, Network, Data Link, and Physical (top to bottom)."
+  },
+  {
+    "id": 8,
+    "question": "Data encapsulation:",
+    "multi": true,
+    "options": [
+      "prevents \"man in the middle\" attacks",
+      "ensures data integrity and protects it from unauthorized modifications",
+      "ensures the independence of the message's format and content from the transmission medium",
+      "eliminates the need to know the specifics of adjacent layers within the current layer"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Encapsulation allows each layer to operate independently without needing to understand the implementation details of adjacent layers."
+  },
+  {
+    "id": 9,
+    "question": "Indicate correct sentences",
+    "multi": true,
+    "options": [
+      "in web applications, the server does not store state information",
+      "all the messages exchanged between client and server during a working session follow the same route",
+      "in web applications, client-server communication is always initiated by the client",
+      "in all web applications, all communication takes place through the container (browser)"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "HTTP is stateless (server doesn't inherently store state) and client-initiated. Messages may take different routes, and not all web apps require browsers."
+  },
+  {
+    "id": 10,
+    "question": "Indicate correct claims about HTTP:",
+    "multi": true,
+    "options": [
+      "communication is bidirectional and can be initiated either by the server or by the client",
+      "the messages header is mandatory, but the body of the message can be empty",
+      "it is a transactional communication model based on messages",
+      "communication is intermittent and stateless from the server perspective",
+      "messages have a tree-like structure with two main sections: HEAD and BODY"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "HTTP is client-initiated (not bidirectional), has mandatory headers with optional bodies, is transactional and stateless. HEAD/BODY refers to HTML, not HTTP messages."
+  },
+  {
+    "id": 11,
+    "question": "The first line of an HTTP header for a REQUEST message contains:",
+    "multi": true,
+    "options": [
+      "data compression algorithms (ex. gzip)",
+      "HTTP method used in the request",
+      "accepted data types",
+      "HTTP protocol version",
+      "resource URL"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "HTTP request line contains: Method (GET/POST), URL/path, and HTTP version. Compression and accepted types are in header fields, not the request line."
+  },
+  {
+    "id": 12,
+    "question": "The first line of an HTTP header for a RESPONSE message contains:",
+    "multi": true,
+    "options": [
+      "HTTP protocol version",
+      "called HTTP method",
+      "textual description of the response code",
+      "URL of accessed resource",
+      "numeric response code"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "HTTP response status line contains: HTTP version, numeric status code, and reason phrase (textual description). Methods and URLs are in requests."
+  },
+  {
+    "id": 13,
+    "question": "Which of the following elements is NOT part of an HTTP POST request?",
+    "multi": false,
+    "options": [
+      "POST data",
+      "numeric code of HTTP result",
+      "Cookie header",
+      "User-agent header"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The numeric HTTP result code (status code) is part of the RESPONSE, not the request. Requests contain method, headers, and optional body data."
+  },
+  {
+    "id": 14,
+    "question": "Please indicate the body of the given HTTP message (HTTP/1.1 200 OK ... headers ... Message-content: <html>...).",
+    "multi": false,
+    "options": [
+      "<html><head><title>Test document</title></head><body>This is the content of the document</body></html>",
+      "Message-content: <html>...</html>",
+      "Cache-Control: no-store... / Pragma: no-cache / Message-content:",
+      "Cache-Control: no-store... / Pragma: no-cache / Message-content: <html>...</html>"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The HTTP message body is the content after the blank line separating headers from body. In this case, it's the HTML document content."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following is NOT allowed in an HTTP header?",
+    "multi": true,
+    "options": [
+      "using \\n\\r in the value of a header",
+      "insert a blank line",
+      "use of character : (two points) in the value of a header",
+      "using characters ?, &, space, /"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Literal CR/LF characters in header values enable HTTP response splitting and header injection attacks. They must be encoded or rejected."
+  },
+  {
+    "id": 16,
+    "question": "Which ones of the following sentences are true about DNS?",
+    "multi": true,
+    "options": [
+      "DNS requests are always reaching the root DNS servers",
+      "the result of a DNS query is an IP address",
+      "ROOT servers host information about all the registered domains and subdomains",
+      "DNS servers are using the \"/\" character as subdomain separator"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DNS queries return IP addresses (among other record types). Requests don't always reach root servers (caching exists). Root servers know TLDs only. DNS uses dots, not slashes."
+  },
+  {
+    "id": 17,
+    "question": "Which one of the following can be included in a parameterless URL?",
+    "multi": true,
+    "options": [
+      "reference to an element of the document",
+      "access protocol",
+      "domain or IP",
+      "connection port",
+      "user identification information"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "A URL can contain all these components: protocol (http://), domain/IP, port (:80), user info (user@), and fragment (#element). 'Parameterless' means no query string (?)."
+  },
+  {
+    "id": 18,
+    "question": "Which of the following conditions need to be met for two resources to be considered as having the same origin?",
+    "multi": true,
+    "options": [
+      "the resources can be accessed through the sub-domains of the same domain",
+      "server is identified through the same domain name for both resources",
+      "accessed through the same protocol",
+      "same port is used for communication",
+      "both resources are in the same path on the server(s)"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Same origin requires matching protocol, domain, and port. Sub-domains and paths do not affect origin determination."
+  },
+  {
+    "id": 19,
+    "question": "The \"content origin\" concept is used for:",
+    "multi": true,
+    "options": [
+      "limiting the execution rights of active code within the browser, depending on the origin from which it is loaded",
+      "controlling access from active code to user information (cookies, persistent data) and to the DOM",
+      "preventing unauthorized access during data transmission between client and server",
+      "verifying the authenticity of the received information and preventing impersonation attacks"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Same-origin policy restricts code execution rights and access to sensitive resources (cookies, DOM) based on the origin. It doesn't protect transmission or verify authenticity."
+  },
+  {
+    "id": 20,
+    "question": "Identity is:",
+    "multi": false,
+    "options": [
+      "SSL certificate issued by recognized authorities in the field",
+      "the expression of the individuality of a certain entity",
+      "all information relating to an identified or identifiable natural person",
+      "all specific elements known/possessed only by the user, including papillary, ocular, dental, or DNA characteristics"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Identity is the expression of individuality of an entity. Option 3 describes personal data (GDPR). Option 4 describes biometric authentication factors."
+  },
+  {
+    "id": 21,
+    "question": "What is verified through authentication?",
+    "multi": false,
+    "options": [
+      "what resources are accessible by the user",
+      "what actions can the user take",
+      "who the user is",
+      "if the user already has an active working session"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Authentication verifies identity (who the user is). Authorization determines what resources/actions are permitted. Session management tracks active sessions."
+  },
+  {
+    "id": 22,
+    "question": "Authentication is:",
+    "multi": true,
+    "options": [
+      "a process that can be implemented only through SSL certificates",
+      "certification of the authenticity of data received by the client from the server or by the server from the client",
+      "the process of ensuring the integrity of data transmitted between the client and the server",
+      "process of verifying the identity of an entity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Authentication verifies identity. Data authenticity/integrity is different (signatures, hashes). SSL certificates are one authentication method, not the only one."
+  },
+  {
+    "id": 23,
+    "question": "Two factor authentication requires:",
+    "multi": false,
+    "options": [
+      "using two passwords for authentication",
+      "verifying the user's identity through a password and an additional piece of information obtained via an alternative method",
+      "replacing the classic password-based method with sending a code via SMS or generating a code using a physical device",
+      "requesting the password in a subsequent step, only after the username has been entered correctly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "2FA requires two different factors: something you know (password) plus something you have (device/code) or something you are (biometric). Two passwords is still single-factor."
+  },
+  {
+    "id": 24,
+    "question": "In a working session authentication is performed:",
+    "multi": false,
+    "options": [
+      "each time the user requests the update of personal / access data",
+      "only once, when the working session starts, usually through username and password or two factor authentication",
+      "on each request made to the server",
+      "when the user tries to change the password"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Authentication occurs once at session start. Subsequent requests are authorized via session tokens/cookies, not re-authentication."
+  },
+  {
+    "id": 25,
+    "question": "We can protect a web application from brute force authentication attacks through:",
+    "multi": false,
+    "options": [
+      "limiting the number of login tries",
+      "use of certificates and communication over TLS",
+      "validating correctly the input to prevent XSS attacks",
+      "validating correctly the input against SQL injections"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rate limiting (limiting login attempts) directly prevents brute force attacks. TLS protects transmission, not authentication attempts."
+  },
+  {
+    "id": 26,
+    "question": "Which of the following factors favor brute-force attacks during authentication?",
+    "multi": true,
+    "options": [
+      "omitting the HTTP ONLY specification for cookie handling",
+      "storing passwords in plain text in the database",
+      "unlimited number of login attempts",
+      "vulnerability to reflected XSS attacks",
+      "acceptance of passwords with a low level of complexity"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Unlimited login attempts allow unrestricted guessing. Low complexity passwords are easier to crack. Plain text storage affects breach impact, not brute force feasibility."
+  },
+  {
+    "id": 27,
+    "question": "The vulnerability that favors \"session fixation\" attacks can be described as:",
+    "multi": false,
+    "options": [
+      "using excessively long timeouts before session expiration due to inactivity",
+      "using the same token for multiple work sessions of the same user on different devices",
+      "persistent storage of the session token for the \"Remember me\" functionality",
+      "using the same token to identify both an anonymous session and an authenticated session"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Session fixation exploits applications that don't regenerate session IDs after authentication. An attacker sets a known session ID before the victim logs in."
+  },
+  {
+    "id": 28,
+    "question": "Which of the following can be used to bypass authentication?",
+    "multi": false,
+    "options": [
+      "0' LIMIT 1 #",
+      "' OR 1=1 LIMIT 1 #",
+      "user' OR id=1",
+      "0 ORDER BY 1 #"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "' OR 1=1 LIMIT 1 # is a classic SQL injection that makes the WHERE clause always true, potentially returning the first user (often admin) and bypassing authentication."
+  },
+  {
+    "id": 29,
+    "question": "In the following SQL query the 'id' is a value from the user: $sql = \"SELECT * FROM users WHERE id=\" . $_GET['id']; Which one of the following can be used to determine the number of columns in the 'users' table?",
+    "multi": false,
+    "options": [
+      "0 ORDER BY 5",
+      "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL",
+      "0 UNION ALL SELECT table_name FROM information_schema.tables",
+      "0 OR 1=1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ORDER BY enumeration tests column counts until an error occurs. UNION requires knowing the exact column count first. OR 1=1 returns all rows without revealing structure."
+  },
+  {
+    "id": 30,
+    "question": "Second order SQL injection is:",
+    "multi": false,
+    "options": [
+      "successfully formulating and executing a malicious query even after input data validation",
+      "execution of injection when constructing a query using information already stored in the database",
+      "execution of injection based on data transmitted using a cookie",
+      "execution of injection by constructing a query with unvalidated data sent to the server as a result of a successful XSS attack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Second-order SQL injection occurs when previously stored (and seemingly safe) data is later used in a query without proper sanitization, triggering the injection."
+  },
+  {
+    "id": 31,
+    "question": "Which of the following can be achieved through SQL injection?",
+    "multi": true,
+    "options": [
+      "impersonate server certificate",
+      "launch a stored XSS attack",
+      "authorisation bypass",
+      "launch a DOM XSS attack (type 0)"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "SQL injection can bypass authorization and store malicious scripts in the database for stored XSS. It cannot impersonate certificates or cause DOM XSS directly."
+  },
+  {
+    "id": 32,
+    "question": "SQL injection attacks can be mitigated by:",
+    "multi": true,
+    "options": [
+      "separating SQL queries from data",
+      "proper sanitization of inputs on the client side before sending them to the server",
+      "using parameterized SQL queries and avoiding concatenations",
+      "allowing access to the database only for applications on the same machine"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Parameterized queries (prepared statements) separate SQL code from data, preventing injection. Client-side sanitization is insufficient as attackers bypass it."
+  },
+  {
+    "id": 33,
+    "question": "Which of the following objectives can be achieved through XSS attacks?",
+    "multi": true,
+    "options": [
+      "exfiltrate session token",
+      "access an http-only cookie",
+      "bypass authentication",
+      "access the DOM and change how a page is displayed"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "XSS can steal session tokens (non-httpOnly), bypass authentication, and manipulate the DOM. HttpOnly cookies are specifically protected from JavaScript access."
+  },
+  {
+    "id": 34,
+    "question": "Which of the values for user_parameter allows XSS attack in the following line: <a href=\"user_parameter\">Click me</a>",
+    "multi": true,
+    "options": [
+      "\" javascript:alert(1);",
+      "javascript:alert(1);",
+      "<script>alert(1)</script>",
+      "\"><script>alert(1)</script><a title=\""
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To inject into an href attribute, you need to close the attribute first with \"> then inject script. Option 3 properly escapes and injects malicious code."
+  },
+  {
+    "id": 35,
+    "question": "Which of the following statements are correct regarding DOM XSS attacks?",
+    "multi": true,
+    "options": [
+      "can be prevented through proper validation and sanitization of user inputs on the server",
+      "they manifest as a result of malicious JavaScript code being transmitted from the server to the client",
+      "malicious code cannot be detected by the server",
+      "the malicious code is executed by legitimate functions loaded on the client"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "DOM XSS occurs entirely client-side when JavaScript processes untrusted data. The server never sees the malicious payload, and legitimate JS functions execute the attack."
+  },
+  {
+    "id": 36,
+    "question": "Indicate correct sentences (select one or more):",
+    "multi": true,
+    "options": [
+      "for each external reference in the HTML code a new request is made towards the indicated server",
+      "HTML documents can include the content from images and video files in binary format",
+      "the browser starts the content display only after the JavaScript code in the BODY is executed",
+      "external references from the HEAD section are loaded, processed and executed before the actual display of the content starts"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "HEAD resources block rendering. Each external resource triggers a new HTTP request. Browsers render progressively and embed resources via references, not binary inclusion."
+  },
+  {
+    "id": 37,
+    "question": "The purpose of CSRF token is:",
+    "multi": true,
+    "options": [
+      "strengthening authentication by using a second identification factor alongside the cookie",
+      "ensuring the integrity of data transmitted through forms",
+      "preventing clickjacking attacks",
+      "preventing automatic requests from being made on behalf of the user through XSS techniques"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CSRF tokens prevent Cross-Site Request Forgery by ensuring requests originate from legitimate pages, not malicious sites exploiting the user's authenticated session."
+  },
+  {
+    "id": 38,
+    "question": "It is recommended to generate the CSRF token:",
+    "multi": false,
+    "options": [
+      "each time a new work session is initiated",
+      "with every request sent to the server",
+      "automatically, at certain time intervals",
+      "when user data is updated (username, password)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CSRF tokens should be generated per session and remain valid throughout that session. Generating per-request is unnecessary overhead."
+  },
+  {
+    "id": 39,
+    "question": "Indicate correct affirmations about CSRF:",
+    "multi": true,
+    "options": [
+      "the CSRF token can be exfiltrated by an attacker through HTML or CSS injection",
+      "the CSRF token cannot be efficient if the \"same origin\" policies are not enforced",
+      "it is best practice to have no connection between the CSRF and session tokens",
+      "the CSRF token cannot be exfiltrated through reflected XSS attacks"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "CSRF tokens require same-origin enforcement to work. They should be independent from session tokens. XSS (not HTML/CSS injection) can exfiltrate CSRF tokens."
+  },
+  {
+    "id": 40,
+    "question": "X-Frame-Options: none is useful for:",
+    "multi": false,
+    "options": [
+      "preventing \"clickjacking\" attacks",
+      "preventing stored XSS attacks",
+      "preventing CSRF attacks",
+      "preventing SQL injection attacks"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "X-Frame-Options controls whether a page can be embedded in iframes, preventing clickjacking attacks where malicious sites overlay invisible iframes."
+  },
+  {
+    "id": 41,
+    "question": "Encrypting data:",
+    "multi": true,
+    "options": [
+      "ensures data confidentiality",
+      "always certifies the identity of the sender",
+      "ensures data integrity",
+      "prevents man-in-the-middle attacks"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Encryption primarily ensures confidentiality. It does not guarantee integrity, authentication, or prevent MITM without additional mechanisms like signatures and certificates."
+  },
+  {
+    "id": 42,
+    "question": "Which one of the following statements are true?",
+    "multi": true,
+    "options": [
+      "the compromise of an encryption algorithm allows the decryption of any message encrypted with it",
+      "the compromise of a sufficient number of encryption keys leads to the compromise of the entire algorithm",
+      "identifying a method to quickly traverse all keys constitutes a complete compromise of the encryption algorithm",
+      "the compromise of some encryption keys facilitates the compromise of other keys if they are used with the same encryption algorithm"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "A complete compromise of an encryption algorithm occurs when a method is found to efficiently traverse or determine all possible keys."
+  },
+  {
+    "id": 43,
+    "question": "Which ones of the following statements are true?",
+    "multi": true,
+    "options": [
+      "the difficulty of breaking an encryption code is not influenced by how easily the parameters can be predicted",
+      "the difficulty of breaking an encryption code depends on the number of possible values of its parameters",
+      "access to the implementation of an encryption algorithm based on encryption keys leads to its compromise",
+      "an encryption key is a parameter of an encryption algorithm"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Encryption strength depends on key space size (number of possible values), and the encryption key is indeed a parameter of the algorithm. Predictability DOES affect security."
+  },
+  {
+    "id": 44,
+    "question": "The purpose of an Initialisation Vector is:",
+    "multi": true,
+    "options": [
+      "to initialize the random number generator to obtain better keys",
+      "to allow the safe reuse of encryption keys in the case of streams",
+      "to ensure the standard length of the data block",
+      "to ensure obtaining a different ciphertext when encrypting the same text with the same key"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "IVs ensure identical plaintext produces different ciphertext (semantic security) and enable safe key reuse in stream/block cipher modes."
+  },
+  {
+    "id": 45,
+    "question": "Asymmetric keys:",
+    "multi": true,
+    "options": [
+      "in communication between client and server, they are used for the exchange of symmetric keys",
+      "in 1-to-N communication, one private key and N public keys are required",
+      "are used to encrypt all messages transmitted between the client and the server",
+      "solve the problem of transferring symmetric keys at the beginning of encrypted communication"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Asymmetric cryptography solves key distribution by securely exchanging symmetric keys. Symmetric encryption is then used for bulk data (faster). One key pair serves all recipients."
+  },
+  {
+    "id": 46,
+    "question": "Digital signature:",
+    "multi": true,
+    "options": [
+      "is encrypted using the public key",
+      "is encrypted using the private key",
+      "certifies the identity of the entity who wrote the message",
+      "ensures data integrity"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Digital signatures are created by encrypting a hash with the private key. They verify sender identity and ensure data hasn't been modified."
+  },
+  {
+    "id": 47,
+    "question": "Which of the following elements obtained by an attacker can lead to the compromise of the private key?",
+    "multi": false,
+    "options": [
+      "none of the listed elements",
+      "the source code of the encryption algorithm used by the server",
+      "source data sent by the server, encrypted with the private key",
+      "public key of the server"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By design, knowing the algorithm, public key, or encrypted data should NOT compromise the private key. This is the foundation of asymmetric cryptography security."
+  },
+  {
+    "id": 48,
+    "question": "Certificates used in web applications can:",
+    "multi": true,
+    "options": [
+      "protect web applications against clickjacking attacks",
+      "protect web applications against XSS attacks",
+      "authenticate the source of information transmitted",
+      "secure information when it is saved in the database"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SSL/TLS certificates authenticate the server's identity to clients. They don't prevent XSS, clickjacking, or encrypt data at rest in databases."
+  }
+]
