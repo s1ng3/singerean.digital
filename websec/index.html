@@ -11,10 +11,12 @@
 <style>
   :root{--bg:#000000;--card:#111111;--card2:#1a1a1a;--txt:#ffffff;--muted:#999999;
         --green:#2ecc71;--greenbg:#0e2e1a;--red:#D90429;--redbg:#2e0a0e;--accent:#E63946;--line:#2a2a2a;
-        --yellow:#f5b041;--yellowbg:#332811;}
+        --yellow:#f5b041;--yellowbg:#332811;
+        --page-bg:linear-gradient(160deg,#000000,#111111);}
   *{box-sizing:border-box}
-  body{margin:0;background:linear-gradient(160deg,#000000,#111111);color:var(--txt);
-       font-family:'Inter',system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;}
+  body{margin:0;min-height:100vh;background:var(--page-bg);color:var(--txt);
+       font-family:'Inter',system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;
+       transition:background .35s ease,color .35s ease;}
   .wrap{max-width:760px;margin:0 auto;padding:24px 16px 60px;}
   h1{font-size:20px;margin:4px 0 2px;}
   .sub{color:var(--muted);font-size:13px;margin-bottom:16px;}
@@ -26,7 +28,7 @@
   .meta{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:8px;}
   .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;}
   .qtype{display:inline-block;font-size:11px;letter-spacing:.04em;text-transform:uppercase;
-         color:var(--accent);background:rgba(230,57,70,0.12);border:1px solid rgba(230,57,70,0.4);padding:3px 9px;border-radius:20px;margin-bottom:10px;}
+         color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);padding:3px 9px;border-radius:20px;margin-bottom:10px;}
   .qtext{font-size:17px;font-weight:600;margin:6px 0 16px;}
   .opt{display:flex;align-items:flex-start;gap:10px;width:100%;text-align:left;cursor:pointer;
        background:var(--card2);border:1.5px solid var(--line);color:var(--txt);
@@ -35,13 +37,13 @@
   .opt .mark{flex:0 0 20px;height:20px;border-radius:6px;border:1.5px solid var(--muted);
              display:flex;align-items:center;justify-content:center;font-size:13px;margin-top:1px;}
   .opt.single .mark{border-radius:50%;}
-  .opt.selected{border-color:var(--accent);background:rgba(230,57,70,0.15);}
+  .opt.selected{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 16%,transparent);}
   .opt.selected .mark{background:var(--accent);border-color:var(--accent);}
-  .opt.correct{background:var(--greenbg);border-color:var(--green);}
+  .opt.correct{background:color-mix(in srgb,var(--green) 18%,var(--card));border-color:var(--green);}
   .opt.correct .mark{background:var(--green);border-color:var(--green);}
-  .opt.missed{background:var(--yellowbg);border-color:var(--yellow);}
+  .opt.missed{background:color-mix(in srgb,var(--yellow) 18%,var(--card));border-color:var(--yellow);}
   .opt.missed .mark{background:var(--yellow);border-color:var(--yellow);color:#111111;}
-  .opt.wrong{background:var(--redbg);border-color:var(--red);}
+  .opt.wrong{background:color-mix(in srgb,var(--red) 18%,var(--card));border-color:var(--red);}
   .opt.wrong .mark{background:var(--red);border-color:var(--red);}
   .opt.locked{cursor:default;}
   .feedback{min-height:22px;margin:14px 2px 4px;font-weight:600;font-size:14px;}
@@ -50,7 +52,7 @@
   button.btn{background:var(--accent);color:#fff;border:0;padding:11px 22px;border-radius:10px;
              font-size:15px;font-weight:600;cursor:pointer;}
   button.btn:hover{filter:brightness(1.08);}
-  button.btn.ghost{background:#1f1f1f;}
+  button.btn.ghost{background:var(--card2);}
   button.btn[disabled]{opacity:.45;cursor:not-allowed;}
   .hint{color:var(--muted);font-size:13px;margin:-2px 2px 4px;}
   .result{text-align:center;padding:30px 10px;}
@@ -79,11 +81,17 @@
     flex-direction: column;
     min-width: 140px;
   }
-  .hud.right {
+  .hud-group-right {
     position: fixed;
     top: 24px;
     right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     z-index: 999;
+  }
+  .hud.right {
+    position: static;
   }
   .hud-title {
     font-size: 11px;
@@ -190,6 +198,93 @@
     transform: scale(1.2);
   }
 
+  /* Theme Switcher Widget */
+  .theme-widget {
+    display: flex;
+    align-items: center;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 8px;
+    height: 48px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 999;
+  }
+  .theme-btn {
+    background: transparent;
+    border: none;
+    color: var(--txt);
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.1s;
+    flex-shrink: 0;
+  }
+  .theme-btn:hover { background: var(--card2); }
+  .theme-btn:active { transform: scale(0.95); }
+  .theme-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 232px;
+    max-height: 62vh;
+    overflow-y: auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: 0 14px 44px rgba(0, 0, 0, 0.55);
+    padding: 6px;
+    z-index: 1001;
+    display: none;
+    animation: themeMenuIn 0.18s ease-out;
+  }
+  .theme-menu.open { display: block; }
+  @keyframes themeMenuIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .theme-menu::-webkit-scrollbar { width: 8px; }
+  .theme-menu::-webkit-scrollbar-thumb { background: var(--card2); border-radius: 8px; }
+  .theme-group-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    padding: 9px 10px 3px;
+    font-weight: 600;
+  }
+  .theme-opt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--txt);
+    transition: background 0.12s;
+  }
+  .theme-opt:hover { background: var(--card2); }
+  .theme-opt.active { background: color-mix(in srgb, var(--accent) 20%, transparent); }
+  .theme-opt.active .theme-name::after { content: ' ✓'; color: var(--accent); font-weight: 700; }
+  .theme-name { flex: 1; }
+  .theme-swatch {
+    display: flex;
+    width: 34px;
+    height: 18px;
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+  }
+  .theme-swatch i { flex: 1; height: 100%; display: block; }
+
   @media (max-width: 1100px) {
     .hud-container {
       display: flex;
@@ -202,7 +297,8 @@
       margin-bottom: 16px;
       width: 100%;
     }
-    .hud-group-left {
+    .hud-group-left,
+    .hud-group-right {
       position: static;
       display: flex;
       align-items: center;
@@ -227,7 +323,7 @@
     .hud-title {
       margin-bottom: 0;
     }
-    .music-widget, .sfx-widget {
+    .music-widget, .sfx-widget, .theme-widget {
       box-shadow: none;
       background: transparent;
       border: none;
@@ -244,7 +340,7 @@
     gap: 10px;
   }
   .hud-btn {
-    background: #1f1f1f;
+    background: var(--card2);
     border: 1px solid var(--line);
     color: var(--txt);
     border-radius: 8px;
@@ -269,7 +365,7 @@
     display: none;
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: color-mix(in srgb, var(--bg) 72%, transparent);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     z-index: 998;
@@ -338,11 +434,18 @@
     </div>
   </div>
   
-  <div class="hud right" id="hud-right">
-    <div class="hud-title">Score</div>
-    <div class="hud-row">
-      <div class="hud-value" id="hud-score">0.00 / 10.00</div>
-      <button class="hud-btn" id="btn-reset" onclick="resetQuiz()" title="Reset Quiz">⟳</button>
+  <div class="hud-group-right">
+    <div class="theme-widget" id="theme-widget">
+      <button class="theme-btn" id="btn-theme" onclick="toggleThemeMenu(event)" title="Change Theme">🎨</button>
+      <div class="theme-menu" id="theme-menu"></div>
+    </div>
+
+    <div class="hud right" id="hud-right">
+      <div class="hud-title">Score</div>
+      <div class="hud-row">
+        <div class="hud-value" id="hud-score">0.00 / 10.00</div>
+        <button class="hud-btn" id="btn-reset" onclick="resetQuiz()" title="Reset Quiz">⟳</button>
+      </div>
     </div>
   </div>
 </div>
@@ -1115,6 +1218,118 @@ function finish(){
   
   app.appendChild(card);
 }
+
+/* ===== Theme Switcher ===== */
+const THEMES = {
+  'default':             {bg:'#000000',card:'#111111',card2:'#1a1a1a',txt:'#ffffff',muted:'#999999',accent:'#E63946',line:'#2a2a2a',green:'#2ecc71',red:'#D90429',yellow:'#f5b041'},
+  'catppuccin-mocha':    {bg:'#1e1e2e',card:'#181825',card2:'#313244',txt:'#cdd6f4',muted:'#a6adc8',accent:'#cba6f7',line:'#313244',green:'#a6e3a1',red:'#f38ba8',yellow:'#f9e2af'},
+  'catppuccin-macchiato':{bg:'#24273a',card:'#1e2030',card2:'#363a4f',txt:'#cad3f5',muted:'#a5adcb',accent:'#c6a0f6',line:'#363a4f',green:'#a6da95',red:'#ed8796',yellow:'#eed49f'},
+  'catppuccin-frappe':   {bg:'#303446',card:'#292c3c',card2:'#414559',txt:'#c6d0f5',muted:'#a5adce',accent:'#ca9ee6',line:'#414559',green:'#a6d189',red:'#e78284',yellow:'#e5c890'},
+  'catppuccin-latte':    {bg:'#eff1f5',card:'#e6e9ef',card2:'#ccd0da',txt:'#4c4f69',muted:'#6c6f85',accent:'#8839ef',line:'#bcc0cc',green:'#40a02b',red:'#d20f39',yellow:'#df8e1d'},
+  'rose-pine':           {bg:'#191724',card:'#1f1d2e',card2:'#26233a',txt:'#e0def4',muted:'#908caa',accent:'#c4a7e7',line:'#26233a',green:'#9ccfd8',red:'#eb6f92',yellow:'#f6c177'},
+  'rose-pine-moon':      {bg:'#232136',card:'#2a273f',card2:'#393552',txt:'#e0def4',muted:'#908caa',accent:'#c4a7e7',line:'#393552',green:'#9ccfd8',red:'#eb6f92',yellow:'#f6c177'},
+  'rose-pine-dawn':      {bg:'#faf4ed',card:'#fffaf3',card2:'#f2e9e1',txt:'#575279',muted:'#797593',accent:'#907aa9',line:'#dfdad9',green:'#56949f',red:'#b4637a',yellow:'#ea9d34'},
+  'tokyo-storm':         {bg:'#24283b',card:'#1f2335',card2:'#292e42',txt:'#c0caf5',muted:'#565f89',accent:'#7aa2f7',line:'#292e42',green:'#9ece6a',red:'#f7768e',yellow:'#e0af68'},
+  'tokyo-night':         {bg:'#1a1b26',card:'#16161e',card2:'#24283b',txt:'#c0caf5',muted:'#565f89',accent:'#7aa2f7',line:'#292e42',green:'#9ece6a',red:'#f7768e',yellow:'#e0af68'},
+  'tokyo-day':           {bg:'#e1e2e7',card:'#d5d6db',card2:'#c4c8da',txt:'#3760bf',muted:'#6172b0',accent:'#2e7de9',line:'#c4c8da',green:'#587539',red:'#f52a65',yellow:'#8c6c3e'},
+  'dracula':             {bg:'#282a36',card:'#21222c',card2:'#44475a',txt:'#f8f8f2',muted:'#6272a4',accent:'#bd93f9',line:'#44475a',green:'#50fa7b',red:'#ff5555',yellow:'#f1fa8c'},
+  'everforest':          {bg:'#2d353b',card:'#232a2e',card2:'#343f44',txt:'#d3c6aa',muted:'#859289',accent:'#7fbbb3',line:'#343f44',green:'#a7c080',red:'#e67e80',yellow:'#dbbc7f'},
+  'nord':                {bg:'#2e3440',card:'#292e38',card2:'#3b4252',txt:'#eceff4',muted:'#9aa3b5',accent:'#88c0d0',line:'#3b4252',green:'#a3be8c',red:'#bf616a',yellow:'#ebcb8b'},
+  'gruvbox-dark':        {bg:'#282828',card:'#1d2021',card2:'#3c3836',txt:'#ebdbb2',muted:'#928374',accent:'#fe8019',line:'#3c3836',green:'#b8bb26',red:'#fb4934',yellow:'#fabd2f'},
+  'gruvbox-light':       {bg:'#fbf1c7',card:'#f9f5d7',card2:'#ebdbb2',txt:'#3c3836',muted:'#7c6f64',accent:'#af3a03',line:'#d5c4a1',green:'#79740e',red:'#9d0006',yellow:'#b57614'},
+  'solarized-dark':      {bg:'#002b36',card:'#073642',card2:'#0a4856',txt:'#93a1a1',muted:'#657b83',accent:'#268bd2',line:'#0a4856',green:'#859900',red:'#dc322f',yellow:'#b58900'},
+  'solarized-light':     {bg:'#fdf6e3',card:'#eee8d5',card2:'#ddd6c1',txt:'#586e75',muted:'#657b83',accent:'#268bd2',line:'#ddd6c1',green:'#859900',red:'#dc322f',yellow:'#b58900'},
+  'one-dark':            {bg:'#282c34',card:'#21252b',card2:'#2c313a',txt:'#abb2bf',muted:'#5c6370',accent:'#61afef',line:'#3b4048',green:'#98c379',red:'#e06c75',yellow:'#e5c07b'},
+  'ayu-mirage':          {bg:'#1f2430',card:'#191e2a',card2:'#232834',txt:'#cccac2',muted:'#707a8c',accent:'#73d0ff',line:'#2a3140',green:'#87d96c',red:'#f28779',yellow:'#ffd173'},
+  'ayu-dark':            {bg:'#0d1017',card:'#0b0e14',card2:'#131721',txt:'#bfbdb6',muted:'#565b66',accent:'#59c2ff',line:'#1c2230',green:'#aad94c',red:'#f07178',yellow:'#e6b450'},
+  'ayu-light':           {bg:'#fcfcfc',card:'#f3f4f5',card2:'#e7e8e9',txt:'#5c6166',muted:'#8a9199',accent:'#399ee6',line:'#e0e2e4',green:'#86b300',red:'#e65050',yellow:'#f2ae49'},
+  'monokai-pro':         {bg:'#2d2a2e',card:'#221f22',card2:'#403e41',txt:'#fcfcfa',muted:'#939293',accent:'#ab9df2',line:'#403e41',green:'#a9dc76',red:'#ff6188',yellow:'#ffd866'},
+  'monokai-classic':     {bg:'#272822',card:'#1e1f1c',card2:'#3e3d32',txt:'#f8f8f2',muted:'#75715e',accent:'#ae81ff',line:'#3e3d32',green:'#a6e22e',red:'#f92672',yellow:'#e6db74'},
+  'night-owl':           {bg:'#011627',card:'#010f1c',card2:'#0e293f',txt:'#d6deeb',muted:'#637777',accent:'#82aaff',line:'#0e293f',green:'#22da6e',red:'#ef5350',yellow:'#ffeb95'},
+  'synthwave':           {bg:'#262335',card:'#241b2f',card2:'#34294f',txt:'#f8f8f2',muted:'#848bbd',accent:'#ff7edb',line:'#34294f',green:'#72f1b8',red:'#fe4450',yellow:'#fede5d'},
+  'cobalt2':             {bg:'#193549',card:'#15232d',card2:'#1f4662',txt:'#ffffff',muted:'#8aa6bd',accent:'#ffc600',line:'#1f4662',green:'#3ad900',red:'#ff628c',yellow:'#ff9d00'},
+  'shades-of-purple':    {bg:'#2d2b55',card:'#1e1e3f',card2:'#4c3f8a',txt:'#ffffff',muted:'#a599e9',accent:'#fad000',line:'#4c3f8a',green:'#3ad900',red:'#ff628c',yellow:'#ffae57'}
+};
+
+const THEME_GROUPS = [
+  {label:'',            items:[['default','Default']]},
+  {label:'Catppuccin',  items:[['catppuccin-mocha','Mocha'],['catppuccin-macchiato','Macchiato'],['catppuccin-frappe','Frappé'],['catppuccin-latte','Latte']]},
+  {label:'Rosé Pine',   items:[['rose-pine','Main'],['rose-pine-moon','Moon'],['rose-pine-dawn','Dawn']]},
+  {label:'Tokyo Night', items:[['tokyo-storm','Storm'],['tokyo-night','Night'],['tokyo-day','Day']]},
+  {label:'Dracula',     items:[['dracula','Dracula']]},
+  {label:'Everforest',  items:[['everforest','Everforest']]},
+  {label:'Nord',        items:[['nord','Nord']]},
+  {label:'Gruvbox',     items:[['gruvbox-dark','Dark'],['gruvbox-light','Light']]},
+  {label:'Solarized',   items:[['solarized-dark','Dark'],['solarized-light','Light']]},
+  {label:'Atom One',    items:[['one-dark','One Dark']]},
+  {label:'Ayu',         items:[['ayu-mirage','Mirage'],['ayu-dark','Dark'],['ayu-light','Light']]},
+  {label:'Monokai',     items:[['monokai-pro','Pro'],['monokai-classic','Classic']]},
+  {label:'Night Owl',   items:[['night-owl','Night Owl']]},
+  {label:'Retro',       items:[['synthwave',"SynthWave '84"],['cobalt2','Cobalt2'],['shades-of-purple','Shades of Purple']]}
+];
+
+function applyTheme(id){
+  const t = THEMES[id] || THEMES['default'];
+  const root = document.documentElement;
+  ['bg','card','card2','txt','muted','accent','line','green','red','yellow'].forEach(function(k){
+    root.style.setProperty('--'+k, t[k]);
+  });
+  root.style.setProperty('--page-bg', 'linear-gradient(160deg,'+t.bg+','+t.card+')');
+  try { localStorage.setItem('quizTheme', id); } catch(e){}
+  document.querySelectorAll('.theme-opt').forEach(function(el){
+    el.classList.toggle('active', el.dataset.theme === id);
+  });
+}
+
+function buildThemeMenu(){
+  const menu = document.getElementById('theme-menu');
+  if(!menu) return;
+  let html = '';
+  THEME_GROUPS.forEach(function(g){
+    if(g.label) html += '<div class="theme-group-label">'+g.label+'</div>';
+    g.items.forEach(function(pair){
+      const id = pair[0], name = pair[1], t = THEMES[id];
+      const sw = '<span class="theme-swatch">'+
+        '<i style="background:'+t.bg+'"></i>'+
+        '<i style="background:'+t.accent+'"></i>'+
+        '<i style="background:'+t.green+'"></i>'+
+        '<i style="background:'+t.red+'"></i></span>';
+      html += '<div class="theme-opt" data-theme="'+id+'" onclick="selectTheme(\''+id+'\')">'+
+              sw+'<span class="theme-name">'+name+'</span></div>';
+    });
+  });
+  menu.innerHTML = html;
+}
+
+function toggleThemeMenu(e){
+  if(e) e.stopPropagation();
+  const menu = document.getElementById('theme-menu');
+  if(menu) menu.classList.toggle('open');
+}
+
+function selectTheme(id){
+  applyTheme(id);
+  const menu = document.getElementById('theme-menu');
+  if(menu) menu.classList.remove('open');
+}
+
+function loadTheme(){
+  let saved = 'default';
+  try { saved = localStorage.getItem('quizTheme') || 'default'; } catch(e){}
+  if(!THEMES[saved]) saved = 'default';
+  buildThemeMenu();
+  applyTheme(saved);
+}
+
+document.addEventListener('click', function(ev){
+  const widget = document.getElementById('theme-widget');
+  const menu = document.getElementById('theme-menu');
+  if(menu && menu.classList.contains('open') && widget && !widget.contains(ev.target)){
+    menu.classList.remove('open');
+  }
+});
+
+loadTheme();
 
 initConfetti();
 start();
